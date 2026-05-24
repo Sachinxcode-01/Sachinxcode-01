@@ -8,6 +8,8 @@
 
 ## About Me
 
+<img src="./Sachinxcode-01.jpg" align="right" width="160" style="border-radius: 20px; margin: 0 0 20px 20px;" />
+
 - 🔭 I'm currently working on **Smart Attendance Management System,
   School Website, and Full Stack MERN Projects.**
 - 🌱 I'm currently learning **MERN Stack Development, Flutter App Development,
