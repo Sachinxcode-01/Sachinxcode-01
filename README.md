@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Sachin! <img src="https://media.giphy.com/media/hvRJCLFzcasr6/giphy.gif" width="35px"></h1>
 
 <p align="center">
-  <img src="./Sachinxcode-01.jpg" alt="Profile banner" width="100%" />
+  <img src="./banner_animated.svg" alt="Animated Profile Banner" width="100%" />
 </p>
 
 <p align="center">
