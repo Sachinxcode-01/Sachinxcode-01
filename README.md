@@ -1,8 +1,14 @@
-# Sachin K
+<h1 align="center">Hi there, I'm Sachin! <img src="https://media.giphy.com/media/hvRJCLFzcasr6/giphy.gif" width="35px"></h1>
 
-![Profile banner](./Sachinxcode-01.jpg)
+<p align="center">
+  <img src="./Sachinxcode-01.jpg" alt="Profile banner" width="100%" />
+</p>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=0EB4F7&width=700&lines=Hi+I'm+Sachin+K+%F0%9F%91%8B.;Full+Stack+Developer+(MERN).;AI+Enthusiast.;B.Tech+CSE+Student.)](https://git.io/typing-svg)
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=C77DFF&center=true&vCenter=true&width=700&lines=Full+Stack+Developer+(MERN);Google+Student+Ambassador+2026;AI+%26+Mobile+App+Enthusiast;B.Tech+CSE+Student" alt="Typing SVG" />
+  </a>
+</p>
 
 ---
 
