@@ -77,6 +77,12 @@
   </tr>
 </table>
 
+## 🎯 Skills & Proficiency
+
+<p align="center">
+  <img src="./skills_animated.svg" alt="Skills proficiency bars" width="100%" />
+</p>
+
 ## 🚀 Highlighted Projects
 
 <details>
@@ -151,3 +157,20 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg" />
   <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg" />
 </picture>
+
+---
+
+<div align="center">
+
+### 🤝 Let's Connect & Build Something Amazing!
+
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/ohh_itz_sachin_)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-k-5b6689322)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sachinxcode-01)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kalinganavarsachin@gmail.com)
+
+<br/>
+
+![Footer Wave](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks+for+visiting!&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=75)
+
+</div>
