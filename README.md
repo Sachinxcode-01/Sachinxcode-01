@@ -111,10 +111,10 @@
   <table border="0">
     <tr>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="175" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800" height="175" />
       </td>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="175" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=1800" height="175" />
       </td>
     </tr>
     <tr>
