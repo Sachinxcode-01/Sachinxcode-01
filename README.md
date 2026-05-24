@@ -71,27 +71,62 @@
   </tr>
 </table>
 
-## Highlighted Projects
+## 🚀 Highlighted Projects
 
-* 🛠️ **Smart Attendance Management System** – A comprehensive Full Stack (MERN) application to automate attendance tracking.
-* 🌐 **School Website** – A modern, responsive portal for schools built with HTML, CSS, and JavaScript.
+<details>
+  <summary><b>🛠️ Smart Attendance Management System (MERN Stack)</b></summary>
+  <br/>
+  
+  A full-stack web application designed to digitize and automate the traditional process of tracking and recording attendance.
+  
+  *   **Key Features**:
+      *   **Biometric / Dynamic QR Attendance**: Generates secure, short-lived QR codes to prevent proxy student check-ins.
+      *   **Admin Dashboard**: Real-time charts, monthly reports, and data exportation (PDF/Excel) for teachers.
+      *   **Automated Email Warnings**: Notifies users and parents when attendance falls below standard percentages.
+  *   **Tech Stack**: MongoDB, Express.js, React, Node.js, TailwindCSS.
+</details>
 
-## GitHub Stats
+<details>
+  <summary><b>🌐 Responsive School Website</b></summary>
+  <br/>
+  
+  A modern, user-friendly portal for academic institutions offering online admissions, event notices, and responsive navigation.
+  
+  *   **Key Features**:
+      *   **Admissions Portal**: Custom forms for student enrollment requests.
+      *   **Dynamic Notice Board**: High-impact notice section displaying holiday listings, exam updates, and events.
+      *   **Media Gallery**: Responsive carousel to showcase school achievements and campus life.
+  *   **Tech Stack**: HTML5, CSS3, JavaScript (ES6+), Bootstrap, Node.js.
+</details>
 
-![Sachin's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sachinxcode-01&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
+## 📊 GitHub Dashboard
 
-![Sachin's GitHub streak](https://nirzak-streak-stats.vercel.app/?user=Sachinxcode-01&theme=dark&hide_border=false)
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center" valign="middle">
+        <img src="https://github-readme-stats.vercel.app/api?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="175" />
+      </td>
+      <td align="center" valign="middle">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="175" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">
+        <img src="https://nirzak-streak-stats.vercel.app/?user=Sachinxcode-01&theme=tokyonight&hide_border=true" height="150" />
+      </td>
+      <td align="center" valign="middle">
+        <img src="https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Profile%20views&color=7a52aa&style=flat-square" height="30" /><br/>
+        <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=twilight" height="110" /></a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-![Sachin's top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sachinxcode-01&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-![Profile views](https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Profile%20views&color=0e75b6&style=flat)
-
-[![GitHub trophies](https://github-profile-trophy.vercel.app/?username=Sachinxcode-01)](https://github.com/ryo-ma/github-profile-trophy)
-
-## Contribution Graph
+## 📈 Contribution Graph
 
 ![Sachin's contribution graph](https://montasim-github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=0d1117&color=00b8b5&line=eb008b&point=FFFFFF&area=true&hide_border=true&hide_title=true)
 
-## Contribution Snake
+## 🐍 Contribution Snake
 
 ![GitHub contribution snake](https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg)
