@@ -77,6 +77,12 @@
   </tr>
 </table>
 
+## 🌌 Tech Stack Orbit
+
+<p align="center">
+  <img src="./tech_orbit.svg" alt="Sachin's Tech Stack Solar System" width="100%" />
+</p>
+
 ## 🎯 Skills & Proficiency
 
 <p align="center">
