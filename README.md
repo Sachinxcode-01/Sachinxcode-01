@@ -1,14 +1,12 @@
 # Sachin K
 
-![Profile banner](https://github.com/user-attachments/assets/e217c501-8124-4b57-848c-518c68f345d6)
+![Profile banner](./Sachinxcode-01.jpg)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=0EB4F7&width=700&lines=Hi+I'm+Sachin+K+%F0%9F%91%8B.;Full+Stack+Developer+(MERN).;AI+Enthusiast.;B.Tech+CSE+Student.)](https://git.io/typing-svg)
 
 ---
 
 ## About Me
-
-<img src="./Sachinxcode-01.jpg" align="right" width="160" style="border-radius: 20px; margin: 0 0 20px 20px;" />
 
 - 🔭 I'm currently working on **Smart Attendance Management System,
   School Website, and Full Stack MERN Projects.**
