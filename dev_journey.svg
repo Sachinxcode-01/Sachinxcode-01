@@ -1,0 +1,233 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgRadial" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#12091f"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </radialGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c77dff"/>
+      <stop offset="50%" stop-color="#00eaff"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+
+    <!-- Node gradients -->
+    <radialGradient id="node1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c77dff"/>
+      <stop offset="100%" stop-color="#7b2ff7"/>
+    </radialGradient>
+    <radialGradient id="node2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="100%" stop-color="#0077ff"/>
+    </radialGradient>
+    <radialGradient id="node3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b9d"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </radialGradient>
+    <radialGradient id="node4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#38f9d7"/>
+    </radialGradient>
+    <radialGradient id="node5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f7971e"/>
+      <stop offset="100%" stop-color="#ffd200"/>
+    </radialGradient>
+    <radialGradient id="node6" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ee0979"/>
+    </radialGradient>
+
+    <!-- Particle gradient -->
+    <radialGradient id="star" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card backgrounds -->
+    <linearGradient id="card1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0d33" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" rx="18" fill="url(#bgRadial)"/>
+
+  <!-- Animated starfield particles -->
+  <g opacity="0.6">
+    <circle cx="80" cy="40" r="1.2" fill="#fff"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="90" r="0.8" fill="#c77dff"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="370" cy="30" r="1.0" fill="#00eaff"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="550" cy="60" r="1.4" fill="#fff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="20" r="0.9" fill="#ff6b9d"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="75" r="1.1" fill="#fff"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.0s" repeatCount="indefinite"/></circle>
+    <circle cx="50" cy="480" r="0.8" fill="#43e97b"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="460" r="1.3" fill="#c77dff"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="500" r="0.7" fill="#fff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.0s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="490" r="1.0" fill="#f7971e"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="440" cy="510" r="0.9" fill="#00eaff"><animate attributeName="opacity" values="0.1;1;0.1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="310" cy="470" r="1.2" fill="#fff"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="770" cy="130" r="0.8" fill="#ff6b6b"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="170" r="1.0" fill="#fff"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Border with pulse -->
+  <rect x="1.5" y="1.5" width="897" height="517" rx="17" fill="none" stroke="url(#titleGrad)" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="450" y="52" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="26" font-weight="800" fill="url(#titleGrad)" filter="url(#glow)">
+    🚀 Dev Journey Timeline
+  </text>
+  <text x="450" y="73" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12" fill="#666" letter-spacing="3">
+    FROM CURIOSITY  TO  CODE  TO  CREATION
+  </text>
+
+  <!-- === TIMELINE LINE === -->
+  <!-- Animated dashed line across center -->
+  <line x1="90" y1="270" x2="810" y2="270" stroke="#c77dff" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.25">
+    <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.2s" repeatCount="indefinite"/>
+  </line>
+  <!-- Solid glowing base line -->
+  <line x1="90" y1="270" x2="810" y2="270" stroke="url(#titleGrad)" stroke-width="2" opacity="0.15"/>
+
+  <!-- ==================== NODE 1 ==================== -->
+  <!-- Year label -->
+  <text x="120" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">2022</text>
+  <!-- Connector -->
+  <line x1="120" y1="270" x2="120" y2="230" stroke="#c77dff" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <!-- Node circle with pulse -->
+  <circle cx="120" cy="270" r="16" fill="url(#node1)" filter="url(#glow)" opacity="0.95">
+    <animate attributeName="r" values="15;18;15" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="270" r="22" fill="none" stroke="#c77dff" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="18;26;18" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="120" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14">💡</text>
+  <!-- Card above -->
+  <rect x="35" y="130" width="170" height="95" rx="12" fill="#1a0d33" stroke="#c77dff" stroke-width="1" opacity="0.92"/>
+  <rect x="35" y="130" width="170" height="3" rx="2" fill="url(#node1)"/>
+  <text x="120" y="153" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#c77dff">First Line of Code</text>
+  <text x="120" y="171" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Started with HTML &amp; CSS,</text>
+  <text x="120" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">built first static website.</text>
+  <text x="120" y="202" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#666" font-style="italic">The spark ignited 🔥</text>
+
+  <!-- ==================== NODE 2 ==================== -->
+  <text x="265" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">2023</text>
+  <line x1="265" y1="270" x2="265" y2="340" stroke="#00eaff" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <circle cx="265" cy="270" r="16" fill="url(#node2)" filter="url(#glow)" opacity="0.95">
+    <animate attributeName="r" values="15;18;15" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="265" cy="270" r="22" fill="none" stroke="#00eaff" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="18;26;18" dur="3.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="265" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14">⚡</text>
+  <!-- Card below -->
+  <rect x="180" y="340" width="170" height="95" rx="12" fill="#091a33" stroke="#00eaff" stroke-width="1" opacity="0.92"/>
+  <rect x="180" y="340" width="170" height="3" rx="2" fill="url(#node2)"/>
+  <text x="265" y="363" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#00eaff">JavaScript &amp; React</text>
+  <text x="265" y="381" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Mastered JS fundamentals,</text>
+  <text x="265" y="395" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">built interactive UIs.</text>
+  <text x="265" y="412" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#666" font-style="italic">Frontend came alive ✨</text>
+
+  <!-- ==================== NODE 3 ==================== -->
+  <text x="410" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">2023–24</text>
+  <line x1="410" y1="270" x2="410" y2="230" stroke="#ff6b9d" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <circle cx="410" cy="270" r="16" fill="url(#node3)" filter="url(#glow)" opacity="0.95">
+    <animate attributeName="r" values="15;18;15" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="410" cy="270" r="22" fill="none" stroke="#ff6b9d" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="18;26;18" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="410" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14">🛠️</text>
+  <!-- Card above -->
+  <rect x="325" y="130" width="170" height="95" rx="12" fill="#200d1a" stroke="#ff6b9d" stroke-width="1" opacity="0.92"/>
+  <rect x="325" y="130" width="170" height="3" rx="2" fill="url(#node3)"/>
+  <text x="410" y="153" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#ff6b9d">MERN Stack Journey</text>
+  <text x="410" y="171" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Built full-stack apps with</text>
+  <text x="410" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">MongoDB, Express, React, Node.</text>
+  <text x="410" y="202" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#666" font-style="italic">Going full stack 🚀</text>
+
+  <!-- ==================== NODE 4 ==================== -->
+  <text x="555" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">2024</text>
+  <line x1="555" y1="270" x2="555" y2="340" stroke="#43e97b" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <circle cx="555" cy="270" r="16" fill="url(#node4)" filter="url(#glow)" opacity="0.95">
+    <animate attributeName="r" values="15;18;15" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="555" cy="270" r="22" fill="none" stroke="#43e97b" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="18;26;18" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="555" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14">📱</text>
+  <!-- Card below -->
+  <rect x="470" y="340" width="170" height="95" rx="12" fill="#091a12" stroke="#43e97b" stroke-width="1" opacity="0.92"/>
+  <rect x="470" y="340" width="170" height="3" rx="2" fill="url(#node4)"/>
+  <text x="555" y="363" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#43e97b">Flutter &amp; Mobile</text>
+  <text x="555" y="381" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Ventured into cross-platform</text>
+  <text x="555" y="395" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">mobile with Flutter &amp; Dart.</text>
+  <text x="555" y="412" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#666" font-style="italic">Mobile dreams unlocked 📲</text>
+
+  <!-- ==================== NODE 5 ==================== -->
+  <text x="700" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">2025</text>
+  <line x1="700" y1="270" x2="700" y2="230" stroke="#f7971e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <circle cx="700" cy="270" r="16" fill="url(#node5)" filter="url(#glow)" opacity="0.95">
+    <animate attributeName="r" values="15;18;15" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="270" r="22" fill="none" stroke="#f7971e" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="18;26;18" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="700" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14">🤖</text>
+  <!-- Card above -->
+  <rect x="615" y="130" width="170" height="95" rx="12" fill="#1a1200" stroke="#f7971e" stroke-width="1" opacity="0.92"/>
+  <rect x="615" y="130" width="170" height="3" rx="2" fill="url(#node5)"/>
+  <text x="700" y="153" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#f7971e">AI &amp; Google GSA</text>
+  <text x="700" y="171" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Integrated AI tools, became</text>
+  <text x="700" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Google Student Ambassador.</text>
+  <text x="700" y="202" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#666" font-style="italic">Leading with purpose 🌟</text>
+
+  <!-- ==================== NODE 6 (NOW) ==================== -->
+  <text x="810" y="310" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ff6b6b" font-weight="700">NOW</text>
+  <line x1="810" y1="270" x2="810" y2="340" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <!-- Larger pulsing "now" node -->
+  <circle cx="810" cy="270" r="20" fill="url(#node6)" filter="url(#strongGlow)" opacity="0.95">
+    <animate attributeName="r" values="18;23;18" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="810" cy="270" r="28" fill="none" stroke="#ff6b6b" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="r" values="22;34;22" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="810" y="276" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15">⚡</text>
+  <!-- Card below -->
+  <rect x="725" y="340" width="170" height="95" rx="12" fill="#1a0a0a" stroke="#ff6b6b" stroke-width="1.5" opacity="0.95"/>
+  <rect x="725" y="340" width="170" height="3" rx="2" fill="url(#node6)"/>
+  <text x="810" y="363" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#ff6b6b">Building &amp; Growing</text>
+  <text x="810" y="381" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Smart Attendance System,</text>
+  <text x="810" y="395" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">open source &amp; internships.</text>
+  <text x="810" y="412" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#ff6b6b" font-style="italic" font-weight="600">Story still unfolding... 🚀</text>
+
+  <!-- Footer quote -->
+  <text x="450" y="497" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+        font-size="11" fill="#444" font-style="italic" letter-spacing="0.5">
+    "Every expert was once a beginner. Every pro was once an amateur." — Robin Sharma
+  </text>
+
+</svg>

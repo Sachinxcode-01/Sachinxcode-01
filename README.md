@@ -111,6 +111,12 @@
   *   **Tech Stack**: HTML5, CSS3, JavaScript (ES6+), Bootstrap, Node.js.
 </details>
 
+## 🌌 My Dev Journey
+
+<p align="center">
+  <img src="./dev_journey.svg" alt="Sachin's Dev Journey Timeline" width="100%" />
+</p>
+
 ## 📊 GitHub Dashboard
 
 <div align="center">
