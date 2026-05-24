@@ -28,7 +28,7 @@
 <table border="0">
   <tr>
     <td width="50%" valign="middle" align="center">
-      <img src="https://cdn.dribbble.com/userupload/31153076/file/original-8d91ddeaca87dc4ad26f9c98ce4f7be1.gif" width="100%" />
+      <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="100%" />
     </td>
     <td width="50%" valign="middle" align="center">
       <img src="https://readme-jokes.vercel.app/api?theme=dark" width="100%" />
@@ -135,4 +135,8 @@
 
 ## 🐍 Contribution Snake
 
-![GitHub contribution snake](https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg" />
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg" />
+</picture>
