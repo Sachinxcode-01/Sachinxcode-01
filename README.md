@@ -108,25 +108,36 @@
 ## 📊 GitHub Dashboard
 
 <div align="center">
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sachinxcode-01&theme=tokyonight" width="100%" />
+
   <table border="0">
     <tr>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats.vercel.app/api?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800" height="175" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sachinxcode-01&theme=tokyonight" height="175" />
       </td>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachinxcode-01&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=1800" height="175" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachinxcode-01&theme=tokyonight" height="175" />
+      </td>
+      <td align="center" valign="middle">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Sachinxcode-01&theme=tokyonight" height="175" />
       </td>
     </tr>
     <tr>
-      <td align="center" valign="middle">
-        <img src="https://streak-stats.demolab.com/?user=Sachinxcode-01&theme=tokyonight&hide_border=true" height="150" />
+      <td align="center" valign="middle" colspan="2">
+        <img src="https://streak-stats.demolab.com/?user=Sachinxcode-01&theme=tokyonight&hide_border=true" width="100%" />
       </td>
       <td align="center" valign="middle">
         <img src="https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Profile%20views&color=7a52aa&style=flat-square" height="30" /><br/>
-        <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=twilight" height="110" /></a>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sachinxcode-01&theme=tokyonight&utcOffset=5.5" height="130" />
       </td>
     </tr>
   </table>
+
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=twilight&no-frame=true&row=1&column=8" width="100%" />
+  </a>
+
 </div>
 
 ## 📈 Contribution Graph
