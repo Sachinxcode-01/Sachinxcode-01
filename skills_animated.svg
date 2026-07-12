@@ -1,159 +1,153 @@
-<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="470" viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#161b2e"/>
     </linearGradient>
     <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c77dff"/>
-      <stop offset="100%" stop-color="#7b2ff7"/>
+      <stop offset="0%" stop-color="#c77dff"/><stop offset="100%" stop-color="#7b2ff7"/>
     </linearGradient>
     <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00eaff"/>
-      <stop offset="100%" stop-color="#0077ff"/>
+      <stop offset="0%" stop-color="#00eaff"/><stop offset="100%" stop-color="#0077ff"/>
     </linearGradient>
     <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff6b6b"/>
-      <stop offset="100%" stop-color="#ff8e53"/>
+      <stop offset="0%" stop-color="#ff6b6b"/><stop offset="100%" stop-color="#ff8e53"/>
     </linearGradient>
     <linearGradient id="bar4" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#43e97b"/>
-      <stop offset="100%" stop-color="#38f9d7"/>
+      <stop offset="0%" stop-color="#43e97b"/><stop offset="100%" stop-color="#38f9d7"/>
     </linearGradient>
     <linearGradient id="bar5" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f7971e"/>
-      <stop offset="100%" stop-color="#ffd200"/>
+      <stop offset="0%" stop-color="#f7971e"/><stop offset="100%" stop-color="#ffd200"/>
+    </linearGradient>
+    <linearGradient id="bar6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b9d"/><stop offset="100%" stop-color="#c471ed"/>
     </linearGradient>
     <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c77dff"/>
-      <stop offset="100%" stop-color="#00eaff"/>
+      <stop offset="0%" stop-color="#c77dff"/><stop offset="100%" stop-color="#00eaff"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="bar1clip"><rect id="bar1rect" x="0" y="0" width="0" height="22" rx="11"/></clipPath>
-    <clipPath id="bar2clip"><rect id="bar2rect" x="0" y="0" width="0" height="22" rx="11"/></clipPath>
-    <clipPath id="bar3clip"><rect id="bar3rect" x="0" y="0" width="0" height="22" rx="11"/></clipPath>
-    <clipPath id="bar4clip"><rect id="bar4rect" x="0" y="0" width="0" height="22" rx="11"/></clipPath>
-    <clipPath id="bar5clip"><rect id="bar5rect" x="0" y="0" width="0" height="22" rx="11"/></clipPath>
-    <clipPath id="bar6clip"><rect x="0" y="0" width="0" height="22" rx="11"/></clipPath>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="420" rx="16" fill="url(#bgGrad)"/>
-
-  <!-- Border -->
-  <rect x="1" y="1" width="898" height="418" rx="15" fill="none" stroke="#c77dff" stroke-width="1.5" opacity="0.5">
+  <rect width="900" height="470" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="898" height="468" rx="15" fill="none" stroke="#c77dff" stroke-width="1.5" opacity="0.5">
     <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Title -->
-  <text x="450" y="48" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+  <text x="450" y="46" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
         font-size="22" font-weight="700" fill="url(#titleGrad)" filter="url(#glow)">
-    ⚡ Skills &amp; Proficiency
+    &#9889; Skills &amp; Proficiency
   </text>
   <line x1="60" y1="62" x2="840" y2="62" stroke="#c77dff" stroke-width="0.5" opacity="0.4"/>
 
-  <!-- LEFT COLUMN -->
-  <!-- Skill 1: JavaScript -->
+  <!-- ══════════ LEFT COLUMN ══════════ -->
+
+  <!-- JavaScript / React 90% -> 306 -->
   <text x="60" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c77dff" font-weight="600">JavaScript / React</text>
-  <text x="400" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">90%</text>
+  <text x="400" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">90%</text>
   <rect x="60" y="107" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="60" y="107" width="0" height="22" rx="11" fill="url(#bar1)">
-    <animate attributeName="width" from="0" to="306" dur="1.5s" begin="0.2s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="306" dur="1.5s" begin="0.20s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 2: Node.js / Express -->
+  <!-- Node.js / Express 82% -> 279 -->
   <text x="60" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#00eaff" font-weight="600">Node.js / Express</text>
-  <text x="400" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">82%</text>
+  <text x="400" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">82%</text>
   <rect x="60" y="165" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="60" y="165" width="0" height="22" rx="11" fill="url(#bar2)">
-    <animate attributeName="width" from="0" to="279" dur="1.5s" begin="0.4s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="279" dur="1.5s" begin="0.30s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 3: MongoDB -->
-  <text x="60" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">MongoDB</text>
-  <text x="400" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">78%</text>
+  <!-- FastAPI / Python 75% -> 255 -->
+  <text x="60" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">FastAPI / Python</text>
+  <text x="400" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">75%</text>
   <rect x="60" y="223" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="60" y="223" width="0" height="22" rx="11" fill="url(#bar3)">
-    <animate attributeName="width" from="0" to="265" dur="1.5s" begin="0.6s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="255" dur="1.5s" begin="0.40s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 4: Flutter -->
-  <text x="60" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">Flutter / Dart</text>
-  <text x="400" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">70%</text>
+  <!-- MongoDB 78% -> 265 -->
+  <text x="60" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">MongoDB</text>
+  <text x="400" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">78%</text>
   <rect x="60" y="281" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="60" y="281" width="0" height="22" rx="11" fill="url(#bar4)">
-    <animate attributeName="width" from="0" to="238" dur="1.5s" begin="0.8s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="265" dur="1.5s" begin="0.50s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 5: Python -->
-  <text x="60" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">Python</text>
-  <text x="400" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">65%</text>
+  <!-- Flutter / Dart 70% -> 238 -->
+  <text x="60" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">Flutter / Dart</text>
+  <text x="400" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">70%</text>
   <rect x="60" y="339" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="60" y="339" width="0" height="22" rx="11" fill="url(#bar5)">
-    <animate attributeName="width" from="0" to="221" dur="1.5s" begin="1.0s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="238" dur="1.5s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- RIGHT COLUMN -->
-  <!-- Skill 6: HTML/CSS -->
+  <!-- C++ / DSA 72% -> 245 -->
+  <text x="60" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b9d" font-weight="600">C++ / DSA</text>
+  <text x="400" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">72%</text>
+  <rect x="60" y="397" width="340" height="22" rx="11" fill="#1e2535"/>
+  <rect x="60" y="397" width="0" height="22" rx="11" fill="url(#bar6)">
+    <animate attributeName="width" from="0" to="245" dur="1.5s" begin="0.70s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- ══════════ RIGHT COLUMN ══════════ -->
+
+  <!-- HTML5 / CSS3 95% -> 323 -->
   <text x="500" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c77dff" font-weight="600">HTML5 / CSS3</text>
-  <text x="840" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">95%</text>
+  <text x="840" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">95%</text>
   <rect x="500" y="107" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="500" y="107" width="0" height="22" rx="11" fill="url(#bar1)">
-    <animate attributeName="width" from="0" to="323" dur="1.5s" begin="0.3s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="323" dur="1.5s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 7: Git/GitHub -->
-  <text x="500" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#00eaff" font-weight="600">Git / GitHub</text>
-  <text x="840" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">88%</text>
+  <!-- Tailwind / Bootstrap 88% -> 299 -->
+  <text x="500" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#00eaff" font-weight="600">Tailwind / Bootstrap</text>
+  <text x="840" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">88%</text>
   <rect x="500" y="165" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="500" y="165" width="0" height="22" rx="11" fill="url(#bar2)">
-    <animate attributeName="width" from="0" to="299" dur="1.5s" begin="0.5s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="299" dur="1.5s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 8: C++ / DSA -->
-  <text x="500" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">C++ / DSA</text>
-  <text x="840" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">72%</text>
+  <!-- Git / GitHub 88% -> 299 -->
+  <text x="500" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">Git / GitHub</text>
+  <text x="840" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">88%</text>
   <rect x="500" y="223" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="500" y="223" width="0" height="22" rx="11" fill="url(#bar3)">
-    <animate attributeName="width" from="0" to="245" dur="1.5s" begin="0.7s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="299" dur="1.5s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 9: AI Tools -->
-  <text x="500" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">AI Tools &amp; Integration</text>
-  <text x="840" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">68%</text>
+  <!-- AI / Computer Vision 72% -> 245 -->
+  <text x="500" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">AI / Computer Vision</text>
+  <text x="840" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">72%</text>
   <rect x="500" y="281" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="500" y="281" width="0" height="22" rx="11" fill="url(#bar4)">
-    <animate attributeName="width" from="0" to="231" dur="1.5s" begin="0.9s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="245" dur="1.5s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
-  <!-- Skill 10: Problem Solving -->
-  <text x="500" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">Problem Solving</text>
-  <text x="840" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" text-anchor="end">80%</text>
+  <!-- REST APIs 80% -> 272 -->
+  <text x="500" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">REST APIs</text>
+  <text x="840" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">80%</text>
   <rect x="500" y="339" width="340" height="22" rx="11" fill="#1e2535"/>
   <rect x="500" y="339" width="0" height="22" rx="11" fill="url(#bar5)">
-    <animate attributeName="width" from="0" to="272" dur="1.5s" begin="1.1s" fill="freeze" calcMode="spline"
-      keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="width" from="0" to="272" dur="1.5s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- Problem Solving 80% -> 272 -->
+  <text x="500" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b9d" font-weight="600">Problem Solving</text>
+  <text x="840" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">80%</text>
+  <rect x="500" y="397" width="340" height="22" rx="11" fill="#1e2535"/>
+  <rect x="500" y="397" width="0" height="22" rx="11" fill="url(#bar6)">
+    <animate attributeName="width" from="0" to="272" dur="1.5s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
 
   <!-- Center divider -->
-  <line x1="450" y1="75" x2="450" y2="380" stroke="#c77dff" stroke-width="0.5" stroke-dasharray="5,5" opacity="0.3"/>
+  <line x1="450" y1="80" x2="450" y2="415" stroke="#c77dff" stroke-width="0.5" stroke-dasharray="5,5" opacity="0.3"/>
 
   <!-- Footer quote -->
-  <text x="450" y="400" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
-        font-size="12" fill="#555" font-style="italic">
-    "First, solve the problem. Then, write the code." — John Johnson
+  <text x="450" y="445" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+        font-size="12" fill="#5b6472" font-style="italic">
+    "First, solve the problem. Then, write the code." &#8212; John Johnson
   </text>
-
 </svg>

@@ -36,11 +36,17 @@
       <stop offset="40%" stop-color="#ffd200"/>
       <stop offset="100%" stop-color="#b39300"/>
     </radialGradient>
-    
+
     <radialGradient id="htmlGrad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffebe0"/>
       <stop offset="40%" stop-color="#ff6b35"/>
       <stop offset="100%" stop-color="#b33600"/>
+    </radialGradient>
+
+    <radialGradient id="tailwindGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0f7ff"/>
+      <stop offset="40%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
     </radialGradient>
 
     <radialGradient id="reactGrad" cx="50%" cy="50%" r="50%">
@@ -53,6 +59,12 @@
       <stop offset="0%" stop-color="#e8f8f0"/>
       <stop offset="40%" stop-color="#39d353"/>
       <stop offset="100%" stop-color="#1b7a2d"/>
+    </radialGradient>
+
+    <radialGradient id="fastapiGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d7f5f0"/>
+      <stop offset="40%" stop-color="#009688"/>
+      <stop offset="100%" stop-color="#00564d"/>
     </radialGradient>
 
     <radialGradient id="flutterGrad" cx="50%" cy="50%" r="50%">
@@ -77,6 +89,12 @@
       <stop offset="0%" stop-color="#e8eaf6"/>
       <stop offset="40%" stop-color="#3f51b5"/>
       <stop offset="100%" stop-color="#1a237e"/>
+    </radialGradient>
+
+    <radialGradient id="aiGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe0f5"/>
+      <stop offset="40%" stop-color="#ff6b9d"/>
+      <stop offset="100%" stop-color="#a01050"/>
     </radialGradient>
 
     <!-- Title Gradient -->
@@ -108,95 +126,93 @@
 
   <!-- Title & Subtitle -->
   <text x="450" y="45" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="800" fill="url(#titleGrad)" filter="url(#neonGlow)">
-    🌌 Tech Stack Solar System
+    &#127756; Tech Stack Solar System
   </text>
   <text x="450" y="65" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#666" letter-spacing="4">
     ORBITING CORE TECHNOLOGIES &amp; FRAMEWORKS
   </text>
 
   <!-- === ORBITS (Ellipses with perspective) === -->
-  <!-- Orbit 1 (Inner) -->
   <ellipse id="orbit1" cx="450" cy="245" rx="160" ry="50" fill="none" stroke="#7b2ff7" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
-  <!-- Orbit 2 -->
   <ellipse id="orbit2" cx="450" cy="245" rx="250" ry="80" fill="none" stroke="#00eaff" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
-  <!-- Orbit 3 -->
   <ellipse id="orbit3" cx="450" cy="245" rx="340" ry="110" fill="none" stroke="#39d353" stroke-width="1" stroke-dasharray="8,4" opacity="0.25"/>
-  <!-- Orbit 4 (Outer) -->
   <ellipse id="orbit4" cx="450" cy="245" rx="420" ry="140" fill="none" stroke="#f7971e" stroke-width="1" stroke-dasharray="10,5" opacity="0.2"/>
 
   <!-- === CENTRAL SUN (The Developer Core) === -->
   <g transform="translate(450, 245)">
-    <!-- Glow aura -->
     <circle cx="0" cy="0" r="45" fill="url(#sunGrad)" opacity="0.3" filter="url(#strongGlow)">
       <animate attributeName="r" values="40;48;40" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <!-- Solid core -->
     <circle cx="0" cy="0" r="32" fill="url(#sunGrad)" filter="url(#neonGlow)"/>
-    <!-- Decorative Orbiting Core Rings -->
     <ellipse cx="0" cy="0" rx="48" ry="15" fill="none" stroke="#c77dff" stroke-width="1" opacity="0.6" transform="rotate(-15)"/>
     <ellipse cx="0" cy="0" rx="48" ry="15" fill="none" stroke="#00eaff" stroke-width="1" opacity="0.4" transform="rotate(20)"/>
-    <!-- Core Text -->
     <text x="0" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1">SACHIN</text>
   </g>
 
   <!-- ==================== ORBITING PLANETS ==================== -->
 
-  <!-- === ORBIT 1: JS & HTML/CSS === -->
-  <!-- Planet 1A: JavaScript -->
+  <!-- === ORBIT 1: JS, HTML/CSS, Tailwind === -->
   <g>
     <circle r="12" fill="url(#jsGrad)" filter="url(#neonGlow)"/>
     <text y="-18" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#ffd200">JS</text>
     <animateMotion dur="7s" repeatCount="indefinite" path="M 450,245 m -160,0 a 160,50 0 1,0 320,0 a 160,50 0 1,0 -320,0"/>
   </g>
-  <!-- Planet 1B: HTML/CSS -->
   <g>
     <circle r="11" fill="url(#htmlGrad)" filter="url(#neonGlow)"/>
     <text y="-17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#ff6b35">HTML/CSS</text>
-    <animateMotion dur="7s" begin="-3.5s" repeatCount="indefinite" path="M 450,245 m -160,0 a 160,50 0 1,0 320,0 a 160,50 0 1,0 -320,0"/>
+    <animateMotion dur="7s" begin="-2.33s" repeatCount="indefinite" path="M 450,245 m -160,0 a 160,50 0 1,0 320,0 a 160,50 0 1,0 -320,0"/>
+  </g>
+  <g>
+    <circle r="11" fill="url(#tailwindGrad)" filter="url(#neonGlow)"/>
+    <text y="-17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">Tailwind</text>
+    <animateMotion dur="7s" begin="-4.66s" repeatCount="indefinite" path="M 450,245 m -160,0 a 160,50 0 1,0 320,0 a 160,50 0 1,0 -320,0"/>
   </g>
 
-  <!-- === ORBIT 2: React & Node.js === -->
-  <!-- Planet 2A: React -->
+  <!-- === ORBIT 2: React, Node.js, FastAPI === -->
   <g>
     <circle r="15" fill="url(#reactGrad)" filter="url(#neonGlow)"/>
-    <!-- Orbiting design element around React -->
     <ellipse cx="0" cy="0" rx="20" ry="7" fill="none" stroke="#00eaff" stroke-width="0.7" transform="rotate(30)"/>
     <text y="-22" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#00eaff">React</text>
     <animateMotion dur="12s" repeatCount="indefinite" path="M 450,245 m -250,0 a 250,80 0 1,0 500,0 a 250,80 0 1,0 -500,0"/>
   </g>
-  <!-- Planet 2B: Node.js -->
   <g>
     <circle r="14" fill="url(#nodeGrad)" filter="url(#neonGlow)"/>
     <text y="-21" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#39d353">Node.js</text>
-    <animateMotion dur="12s" begin="-6s" repeatCount="indefinite" path="M 450,245 m -250,0 a 250,80 0 1,0 500,0 a 250,80 0 1,0 -500,0"/>
+    <animateMotion dur="12s" begin="-4s" repeatCount="indefinite" path="M 450,245 m -250,0 a 250,80 0 1,0 500,0 a 250,80 0 1,0 -500,0"/>
+  </g>
+  <g>
+    <circle r="13" fill="url(#fastapiGrad)" filter="url(#neonGlow)"/>
+    <text y="-20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#12c9b6">FastAPI</text>
+    <animateMotion dur="12s" begin="-8s" repeatCount="indefinite" path="M 450,245 m -250,0 a 250,80 0 1,0 500,0 a 250,80 0 1,0 -500,0"/>
   </g>
 
-  <!-- === ORBIT 3: Flutter & MongoDB === -->
-  <!-- Planet 3A: Flutter -->
+  <!-- === ORBIT 3: Flutter, MongoDB === -->
   <g>
     <circle r="15" fill="url(#flutterGrad)" filter="url(#neonGlow)"/>
     <text y="-22" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#29b6f6">Flutter</text>
     <animateMotion dur="18s" repeatCount="indefinite" path="M 450,245 m -340,0 a 340,110 0 1,0 680,0 a 340,110 0 1,0 -680,0"/>
   </g>
-  <!-- Planet 3B: MongoDB -->
   <g>
     <circle r="13" fill="url(#mongoGrad)" filter="url(#neonGlow)"/>
     <text y="-20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#4caf50">MongoDB</text>
     <animateMotion dur="18s" begin="-9s" repeatCount="indefinite" path="M 450,245 m -340,0 a 340,110 0 1,0 680,0 a 340,110 0 1,0 -680,0"/>
   </g>
 
-  <!-- === ORBIT 4: Python & C++ === -->
-  <!-- Planet 4A: Python -->
+  <!-- === ORBIT 4: Python, C++, AI/ML === -->
   <g>
     <circle r="14" fill="url(#pythonGrad)" filter="url(#neonGlow)"/>
     <text y="-21" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#ffd54f">Python</text>
     <animateMotion dur="25s" repeatCount="indefinite" path="M 450,245 m -420,0 a 420,140 0 1,0 840,0 a 420,140 0 1,0 -840,0"/>
   </g>
-  <!-- Planet 4B: C++ -->
   <g>
     <circle r="13" fill="url(#cppGrad)" filter="url(#neonGlow)"/>
-    <text y="-20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#3f51b5">C++ / DSA</text>
-    <animateMotion dur="25s" begin="-12.5s" repeatCount="indefinite" path="M 450,245 m -420,0 a 420,140 0 1,0 840,0 a 420,140 0 1,0 -840,0"/>
+    <text y="-20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#7986cb">C++ / DSA</text>
+    <animateMotion dur="25s" begin="-8.33s" repeatCount="indefinite" path="M 450,245 m -420,0 a 420,140 0 1,0 840,0 a 420,140 0 1,0 -840,0"/>
+  </g>
+  <g>
+    <circle r="14" fill="url(#aiGrad)" filter="url(#neonGlow)"/>
+    <text y="-21" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#ff6b9d">AI / ML</text>
+    <animateMotion dur="25s" begin="-16.66s" repeatCount="indefinite" path="M 450,245 m -420,0 a 420,140 0 1,0 840,0 a 420,140 0 1,0 -840,0"/>
   </g>
 
 </svg>
