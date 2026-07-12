@@ -25,8 +25,16 @@
     <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#c77dff"/><stop offset="100%" stop-color="#00eaff"/>
     </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
     <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="barGlow" x="-10%" y="-70%" width="120%" height="240%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <!-- Background -->
@@ -40,7 +48,12 @@
         font-size="22" font-weight="700" fill="url(#titleGrad)" filter="url(#glow)">
     &#9889; Skills &amp; Proficiency
   </text>
-  <line x1="60" y1="62" x2="840" y2="62" stroke="#c77dff" stroke-width="0.5" opacity="0.4"/>
+  <!-- Animated title underline -->
+  <line x1="60" y1="62" x2="840" y2="62" stroke="#c77dff" stroke-width="0.5" opacity="0.15"/>
+  <rect x="450" y="59.5" width="0" height="3" rx="1.5" fill="url(#titleGrad)" filter="url(#glow)">
+    <animate attributeName="width" from="0" to="190" dur="1s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="x" from="450" to="355" dur="1s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
 
   <!-- ══════════ LEFT COLUMN ══════════ -->
 
@@ -48,49 +61,91 @@
   <text x="60" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c77dff" font-weight="600">JavaScript / React</text>
   <text x="400" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">90%</text>
   <rect x="60" y="107" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="107" width="0" height="22" rx="11" fill="url(#bar1)">
+  <rect x="60" y="107" width="0" height="22" rx="11" fill="url(#bar1)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="306" dur="1.5s" begin="0.20s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="110" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="294" dur="1.5s" begin="0.20s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="118" r="5" fill="#c77dff" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="366" dur="1.5s" begin="0.20s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.7s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Node.js / Express 82% -> 279 -->
   <text x="60" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#00eaff" font-weight="600">Node.js / Express</text>
   <text x="400" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">82%</text>
   <rect x="60" y="165" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="165" width="0" height="22" rx="11" fill="url(#bar2)">
+  <rect x="60" y="165" width="0" height="22" rx="11" fill="url(#bar2)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="279" dur="1.5s" begin="0.30s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="168" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="267" dur="1.5s" begin="0.30s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="176" r="5" fill="#00eaff" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="339" dur="1.5s" begin="0.30s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- FastAPI / Python 75% -> 255 -->
   <text x="60" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">FastAPI / Python</text>
   <text x="400" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">75%</text>
   <rect x="60" y="223" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="223" width="0" height="22" rx="11" fill="url(#bar3)">
+  <rect x="60" y="223" width="0" height="22" rx="11" fill="url(#bar3)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="255" dur="1.5s" begin="0.40s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="226" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="243" dur="1.5s" begin="0.40s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="234" r="5" fill="#ff8e53" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="315" dur="1.5s" begin="0.40s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.9s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- MongoDB 78% -> 265 -->
   <text x="60" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">MongoDB</text>
   <text x="400" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">78%</text>
   <rect x="60" y="281" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="281" width="0" height="22" rx="11" fill="url(#bar4)">
+  <rect x="60" y="281" width="0" height="22" rx="11" fill="url(#bar4)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="265" dur="1.5s" begin="0.50s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="284" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="253" dur="1.5s" begin="0.50s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="292" r="5" fill="#43e97b" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="325" dur="1.5s" begin="0.50s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.0s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Flutter / Dart 70% -> 238 -->
   <text x="60" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">Flutter / Dart</text>
   <text x="400" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">70%</text>
   <rect x="60" y="339" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="339" width="0" height="22" rx="11" fill="url(#bar5)">
+  <rect x="60" y="339" width="0" height="22" rx="11" fill="url(#bar5)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="238" dur="1.5s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="342" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="226" dur="1.5s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="350" r="5" fill="#ffd200" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="298" dur="1.5s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.1s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- C++ / DSA 72% -> 245 -->
   <text x="60" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b9d" font-weight="600">C++ / DSA</text>
   <text x="400" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">72%</text>
   <rect x="60" y="397" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="60" y="397" width="0" height="22" rx="11" fill="url(#bar6)">
+  <rect x="60" y="397" width="0" height="22" rx="11" fill="url(#bar6)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="245" dur="1.5s" begin="0.70s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="66" y="400" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="233" dur="1.5s" begin="0.70s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="60" cy="408" r="5" fill="#ff6b9d" filter="url(#glow)">
+    <animate attributeName="cx" from="60" to="305" dur="1.5s" begin="0.70s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- ══════════ RIGHT COLUMN ══════════ -->
 
@@ -98,49 +153,91 @@
   <text x="500" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c77dff" font-weight="600">HTML5 / CSS3</text>
   <text x="840" y="100" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">95%</text>
   <rect x="500" y="107" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="107" width="0" height="22" rx="11" fill="url(#bar1)">
+  <rect x="500" y="107" width="0" height="22" rx="11" fill="url(#bar1)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="323" dur="1.5s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="110" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="311" dur="1.5s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="118" r="5" fill="#c77dff" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="823" dur="1.5s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.75s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Tailwind / Bootstrap 88% -> 299 -->
   <text x="500" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#00eaff" font-weight="600">Tailwind / Bootstrap</text>
   <text x="840" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">88%</text>
   <rect x="500" y="165" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="165" width="0" height="22" rx="11" fill="url(#bar2)">
+  <rect x="500" y="165" width="0" height="22" rx="11" fill="url(#bar2)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="299" dur="1.5s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="168" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="287" dur="1.5s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="176" r="5" fill="#00eaff" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="799" dur="1.5s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.85s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Git / GitHub 88% -> 299 -->
   <text x="500" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">Git / GitHub</text>
   <text x="840" y="216" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">88%</text>
   <rect x="500" y="223" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="223" width="0" height="22" rx="11" fill="url(#bar3)">
+  <rect x="500" y="223" width="0" height="22" rx="11" fill="url(#bar3)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="299" dur="1.5s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="226" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="287" dur="1.5s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="234" r="5" fill="#ff8e53" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="799" dur="1.5s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="1.95s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- AI / Computer Vision 72% -> 245 -->
   <text x="500" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#43e97b" font-weight="600">AI / Computer Vision</text>
   <text x="840" y="274" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">72%</text>
   <rect x="500" y="281" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="281" width="0" height="22" rx="11" fill="url(#bar4)">
+  <rect x="500" y="281" width="0" height="22" rx="11" fill="url(#bar4)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="245" dur="1.5s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="284" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="233" dur="1.5s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="292" r="5" fill="#43e97b" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="745" dur="1.5s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.05s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- REST APIs 80% -> 272 -->
   <text x="500" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#f7971e" font-weight="600">REST APIs</text>
   <text x="840" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">80%</text>
   <rect x="500" y="339" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="339" width="0" height="22" rx="11" fill="url(#bar5)">
+  <rect x="500" y="339" width="0" height="22" rx="11" fill="url(#bar5)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="272" dur="1.5s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="342" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="260" dur="1.5s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="350" r="5" fill="#ffd200" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="772" dur="1.5s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.15s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Problem Solving 80% -> 272 -->
   <text x="500" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#ff6b9d" font-weight="600">Problem Solving</text>
   <text x="840" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">80%</text>
   <rect x="500" y="397" width="340" height="22" rx="11" fill="#1e2535"/>
-  <rect x="500" y="397" width="0" height="22" rx="11" fill="url(#bar6)">
+  <rect x="500" y="397" width="0" height="22" rx="11" fill="url(#bar6)" filter="url(#barGlow)">
     <animate attributeName="width" from="0" to="272" dur="1.5s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
   </rect>
+  <rect x="506" y="400" width="0" height="7" rx="3.5" fill="url(#gloss)">
+    <animate attributeName="width" from="0" to="260" dur="1.5s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+  <circle cx="500" cy="408" r="5" fill="#ff6b9d" filter="url(#glow)">
+    <animate attributeName="cx" from="500" to="772" dur="1.5s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="r" values="5;7;5" dur="2s" begin="2.25s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Center divider -->
   <line x1="450" y1="80" x2="450" y2="415" stroke="#c77dff" stroke-width="0.5" stroke-dasharray="5,5" opacity="0.3"/>

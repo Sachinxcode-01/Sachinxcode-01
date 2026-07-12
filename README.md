@@ -4,10 +4,7 @@
   <img src="./banner_animated.svg" alt="Sachin — Animated Profile Banner" width="100%" />
 </a>
 
-<h1 align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasr6/giphy.gif" width="32px" alt="wave" />
-  Hey, I'm Sachin
-</h1>
+<h1 align="center">Hi, I'm Sachin &#128075;</h1>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -16,6 +13,17 @@
 </p>
 
 <p align="center">
+  <i>Full-stack developer building AI-driven, real-world products across web and mobile.</i>
+</p>
+
+<!-- Availability -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20to-Internships%20%7C%20Freelance%20%7C%20Collaboration-43E97B?style=flat-square&labelColor=0d1117" alt="Open to opportunities" />
+  <img src="https://img.shields.io/badge/Based%20in-India%20%F0%9F%87%AE%F0%9F%87%B3-00EAFF?style=flat-square&labelColor=0d1117" alt="Based in India" />
+</p>
+
+<!-- Social -->
+<p align="center">
   <a href="https://www.linkedin.com/in/sachin-k-5b6689322"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:kalinganavarsachin@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.instagram.com/ohh_itz_sachin_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
@@ -23,34 +31,44 @@
   <img src="https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Profile+Views&color=C77DFF&style=for-the-badge" alt="Profile Views" />
 </p>
 
+<!-- Quick navigation -->
+<p align="center">
+  <a href="#-about-me"><img src="https://img.shields.io/badge/About-c77dff?style=flat-square&labelColor=0d1117" alt="About" /></a>&nbsp;
+  <a href="#-tech-arsenal"><img src="https://img.shields.io/badge/Skills-00eaff?style=flat-square&labelColor=0d1117" alt="Skills" /></a>&nbsp;
+  <a href="#-featured-projects"><img src="https://img.shields.io/badge/Projects-c77dff?style=flat-square&labelColor=0d1117" alt="Projects" /></a>&nbsp;
+  <a href="#-github-analytics"><img src="https://img.shields.io/badge/Stats-00eaff?style=flat-square&labelColor=0d1117" alt="Stats" /></a>&nbsp;
+  <a href="#-lets-connect"><img src="https://img.shields.io/badge/Contact-c77dff?style=flat-square&labelColor=0d1117" alt="Contact" /></a>
+</p>
+
 <!-- ══════════════════════ ABOUT ══════════════════════ -->
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;About Me
+## &#128161; About Me
+
+I'm a Computer Science undergraduate and full-stack developer who enjoys turning ideas into products people can actually use. My focus is the **MERN stack**, **AI/computer-vision** integrations, and **Flutter** mobile apps — and I care about writing clean, scalable code.
 
 ```typescript
 const sachin: Developer = {
   role:      "Full Stack Developer (MERN) + AI & Mobile",
-  location:  "India 🇮🇳",
+  location:  "India",
   education: "B.Tech — Computer Science & Engineering",
   title:     "Google Student Ambassador 2026",
 
-  currentlyBuilding: ["Smart Attendance System (AI Face Recognition)",
+  currentlyBuilding: ["SmartFace — AI Attendance System",
                       "School Web Portal", "Full-Stack MERN Products"],
   learning:          ["Scalable Architecture", "DSA", "Advanced Backend", "AI Integrations"],
   askMeAbout:        ["MERN Stack", "FastAPI", "Flutter", "Git & GitHub", "Hackathons"],
 
-  philosophy: "Learn by doing, grow by building, turn ideas into real products.",
+  philosophy: "Learn by doing, grow by building, ship something real.",
 };
 ```
 
-- 🔭 &nbsp;Currently engineering a **Smart Attendance Management System** with **AI face recognition**, plus full-stack **MERN** products.
-- 🌱 &nbsp;Leveling up in **MERN**, **Flutter**, **AI tooling**, and **Data Structures & Algorithms**.
-- 🤝 &nbsp;Open to **open-source collaboration**, **internships**, and **scalable backend** challenges.
-- 💬 &nbsp;Ask me about **web development**, **FastAPI**, **mobile apps**, or **student hackathons**.
-- 📫 &nbsp;Reach me at **[kalinganavarsachin@gmail.com](mailto:kalinganavarsachin@gmail.com)**
-- ⚡ &nbsp;Fun fact: I believe the best way to learn is to **ship something real**.
+- &#128296; &nbsp;Engineering **SmartFace**, an AI face-recognition attendance platform, alongside full-stack **MERN** products.
+- &#127793; &nbsp;Deepening my skills in **scalable architecture**, **advanced backend**, and **DSA**.
+- &#129309; &nbsp;Open to **internships**, **open-source collaboration**, and **freelance** work.
+- &#128172; &nbsp;Ask me about **web development**, **FastAPI**, **mobile apps**, or **hackathons**.
+- &#128231; &nbsp;Reach me at **[kalinganavarsachin@gmail.com](mailto:kalinganavarsachin@gmail.com)**
 
 <br/>
 
@@ -69,14 +87,14 @@ const sachin: Developer = {
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## 🧰 &nbsp;Tech Arsenal
+## &#129520; Tech Arsenal
 
 > The complete toolkit I've used to design, build, and ship my projects.
 
 <table>
   <tr>
     <td valign="top" width="33%">
-      <h3 align="center">💻 Languages</h3>
+      <h3 align="center">&#128187; Languages</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
         <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
@@ -87,7 +105,7 @@ const sachin: Developer = {
       </p>
     </td>
     <td valign="top" width="33%">
-      <h3 align="center">🎨 Frontend</h3>
+      <h3 align="center">&#127912; Frontend</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
         <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
@@ -96,7 +114,7 @@ const sachin: Developer = {
       </p>
     </td>
     <td valign="top" width="33%">
-      <h3 align="center">⚙️ Backend</h3>
+      <h3 align="center">&#9881;&#65039; Backend</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
         <img src="https://img.shields.io/badge/Express-404D59?style=for-the-badge&logo=express&logoColor=61DAFB" />
@@ -107,7 +125,7 @@ const sachin: Developer = {
   </tr>
   <tr>
     <td valign="top" width="33%">
-      <h3 align="center">🤖 AI / ML &amp; Vision</h3>
+      <h3 align="center">&#129302; AI / ML &amp; Vision</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
         <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
@@ -116,7 +134,7 @@ const sachin: Developer = {
       </p>
     </td>
     <td valign="top" width="33%">
-      <h3 align="center">🗄️ Database &amp; Mobile</h3>
+      <h3 align="center">&#128451;&#65039; Database &amp; Mobile</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
         <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -124,7 +142,7 @@ const sachin: Developer = {
       </p>
     </td>
     <td valign="top" width="33%">
-      <h3 align="center">🛠️ Dev Tools</h3>
+      <h3 align="center">&#128736;&#65039; Dev Tools</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
         <img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" />
@@ -140,7 +158,7 @@ const sachin: Developer = {
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## 🌌 &nbsp;Tech Stack Orbit
+## &#127756; Tech Stack Orbit
 
 <p align="center">
   <img src="./tech_orbit.svg" alt="Sachin's Tech Stack Solar System" width="100%" />
@@ -148,20 +166,26 @@ const sachin: Developer = {
 
 <!-- ══════════════════════ SKILLS ══════════════════════ -->
 
-## 🎯 &nbsp;Skills &amp; Proficiency
+## &#127919; Skills &amp; Proficiency
 
 <p align="center">
   <img src="./skills_animated.svg" alt="Animated skills proficiency bars" width="100%" />
+</p>
+
+## &#129516; Developer DNA
+
+<p align="center">
+  <img src="./focus_areas.svg" alt="Radar chart showing Sachin's skill distribution across Frontend, Backend, Database, AI/ML, Mobile, and Tools & DSA" width="100%" />
 </p>
 
 <!-- ══════════════════════ PROJECTS ══════════════════════ -->
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## 🚀 &nbsp;Featured Projects
+## &#128640; Featured Projects
 
 <details open>
-  <summary><b>🤖 SmartFace — AI Smart Attendance Management System</b></summary>
+  <summary><b>&#129302; SmartFace — AI Smart Attendance Management System</b></summary>
   <br/>
 
   A full-stack platform that automates attendance using **AI facial recognition**, spanning a **FastAPI** vision backend, a **MERN** admin dashboard, and a **Flutter** companion app.
@@ -186,7 +210,7 @@ const sachin: Developer = {
 </details>
 
 <details>
-  <summary><b>🌐 Responsive School Website</b></summary>
+  <summary><b>&#127760; Responsive School Website</b></summary>
   <br/>
 
   A modern, mobile-first portal for academic institutions with online admissions, a dynamic notice board, and a responsive media gallery.
@@ -204,11 +228,16 @@ const sachin: Developer = {
   </p>
 </details>
 
+<p align="center">
+  <br/>
+  <a href="https://github.com/Sachinxcode-01?tab=repositories"><img src="https://img.shields.io/badge/Browse_all_repositories-c77dff?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Browse all repositories" /></a>
+</p>
+
 <!-- ══════════════════════ DEV JOURNEY ══════════════════════ -->
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## 🌠 &nbsp;My Dev Journey
+## &#127776; Dev Journey
 
 <p align="center">
   <img src="./dev_journey.svg" alt="Sachin's Dev Journey Timeline" width="100%" />
@@ -218,7 +247,7 @@ const sachin: Developer = {
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
-## 📊 &nbsp;GitHub Analytics
+## &#128202; GitHub Analytics
 
 <div align="center">
 
@@ -226,25 +255,18 @@ const sachin: Developer = {
 
   <table border="0">
     <tr>
-      <td align="center" valign="middle">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sachinxcode-01&theme=tokyonight" height="175" />
+      <td align="center" valign="top">
+        <img src="https://github-readme-stats.vercel.app/api?username=Sachinxcode-01&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="180" alt="GitHub stats" />
       </td>
-      <td align="center" valign="middle">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachinxcode-01&theme=tokyonight" height="175" />
-      </td>
-      <td align="center" valign="middle">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Sachinxcode-01&theme=tokyonight" height="175" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="middle" colspan="2">
-        <img src="https://streak-stats.demolab.com/?user=Sachinxcode-01&theme=tokyonight&hide_border=true" width="100%" />
-      </td>
-      <td align="center" valign="middle">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sachinxcode-01&theme=tokyonight&utcOffset=5.5" height="150" />
+      <td align="center" valign="top">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="180" alt="Top languages" />
       </td>
     </tr>
   </table>
+
+  <img src="https://streak-stats.demolab.com/?user=Sachinxcode-01&theme=tokyonight&hide_border=true" width="100%" alt="GitHub streak" />
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sachinxcode-01&theme=tokyonight&utcOffset=5.5" width="60%" />
 
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=algolia&no-frame=true&no-bg=true&margin-w=4&row=1&column=8" width="100%" />
@@ -252,11 +274,11 @@ const sachin: Developer = {
 
 </div>
 
-## 📈 &nbsp;Contribution Graph
+## &#128200; Contribution Graph
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=0d1117&color=c77dff&line=00eaff&point=ffffff&area=true&hide_border=true&custom_title=Contribution+Activity" alt="Sachin's contribution graph" width="100%" />
 
-## 🐍 &nbsp;Contribution Snake
+## &#128013; Contribution Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake-dark.svg" />
@@ -264,13 +286,18 @@ const sachin: Developer = {
   <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/github-snake.svg" width="100%" />
 </picture>
 
-<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<!-- ══════════════════════ CONNECT ══════════════════════ -->
 
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
 
+## &#129309; Let's Connect
+
 <div align="center">
 
-### 🤝 &nbsp;Let's Connect &amp; Build Something Amazing
+I'm always open to discussing new projects, internships, or collaboration.
+Feel free to reach out &mdash; let's build something great together.
+
+<br/><br/>
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:kalinganavarsachin@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -281,6 +308,6 @@ const sachin: Developer = {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks+for+visiting!&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=75" width="100%" />
 
-<i>⭐ From <a href="https://github.com/Sachinxcode-01">Sachinxcode-01</a> — building ideas into reality, one commit at a time.</i>
+<i>&#11088; From <a href="https://github.com/Sachinxcode-01">Sachinxcode-01</a> — building ideas into reality, one commit at a time.</i>
 
 </div>

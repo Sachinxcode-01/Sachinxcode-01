@@ -6,6 +6,16 @@
       <stop offset="100%" stop-color="#0d1117"/>
     </radialGradient>
 
+    <!-- Nebula depth -->
+    <radialGradient id="nebulaP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7b2ff7" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00eaff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00eaff" stop-opacity="0"/>
+    </radialGradient>
+
     <!-- Glowing Filters -->
     <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
@@ -29,6 +39,26 @@
       <stop offset="70%" stop-color="#7b2ff7"/>
       <stop offset="100%" stop-color="#1d0d3a"/>
     </radialGradient>
+
+    <!-- Comet gradients -->
+    <radialGradient id="cometHead" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#aef1ff"/>
+      <stop offset="100%" stop-color="#00eaff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cometTail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00eaff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#aef1ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="cometHead2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f3c6ff"/>
+      <stop offset="100%" stop-color="#c77dff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cometTail2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c77dff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f3c6ff" stop-opacity="0.9"/>
+    </linearGradient>
 
     <!-- Planet Gradients -->
     <radialGradient id="jsGrad" cx="50%" cy="50%" r="50%">
@@ -108,6 +138,11 @@
   <!-- Background Canvas -->
   <rect width="900" height="460" rx="18" fill="url(#spaceBg)"/>
 
+  <!-- Nebula depth blobs -->
+  <circle cx="240" cy="150" r="130" fill="url(#nebulaP)"/>
+  <circle cx="690" cy="330" r="150" fill="url(#nebulaC)"/>
+  <circle cx="620" cy="90" r="90" fill="url(#nebulaP)"/>
+
   <!-- Glowing outer card border -->
   <rect x="1.5" y="1.5" width="897" height="457" rx="17" fill="none" stroke="url(#titleGrad)" stroke-width="1.5" opacity="0.4">
     <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/>
@@ -122,6 +157,31 @@
     <circle cx="480" cy="60" r="1.5" fill="#fff"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
     <circle cx="80" cy="290" r="0.8" fill="#ff6b6b"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.7s" repeatCount="indefinite"/></circle>
     <circle cx="820" cy="300" r="1" fill="#fff"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="360" cy="110" r="0.9" fill="#fff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="200" r="0.8" fill="#c77dff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="130" cy="200" r="1" fill="#00eaff"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="540" cy="410" r="0.9" fill="#fff"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="410" cy="420" r="0.8" fill="#ff6b9d"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Shooting-star comets -->
+  <g>
+    <g>
+      <path d="M0,0 L-48,-2.6 L-48,2.6 Z" fill="url(#cometTail)"/>
+      <circle r="3" fill="url(#cometHead)"/>
+    </g>
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" calcMode="linear"
+      keyPoints="0;1;1" keyTimes="0;0.16;1" path="M -80,-50 L 1000,430"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.01;0.03;0.14;0.16;1" dur="9s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <g>
+      <path d="M0,0 L-42,-2.3 L-42,2.3 Z" fill="url(#cometTail2)"/>
+      <circle r="2.6" fill="url(#cometHead2)"/>
+    </g>
+    <animateMotion dur="13s" begin="-6s" repeatCount="indefinite" rotate="auto" calcMode="linear"
+      keyPoints="0;1;1" keyTimes="0;0.13;1" path="M 1000,-30 L -120,360"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.01;0.03;0.11;0.13;1" dur="13s" begin="-6s" repeatCount="indefinite"/>
   </g>
 
   <!-- Title & Subtitle -->
@@ -132,14 +192,33 @@
     ORBITING CORE TECHNOLOGIES &amp; FRAMEWORKS
   </text>
 
-  <!-- === ORBITS (Ellipses with perspective) === -->
-  <ellipse id="orbit1" cx="450" cy="245" rx="160" ry="50" fill="none" stroke="#7b2ff7" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
-  <ellipse id="orbit2" cx="450" cy="245" rx="250" ry="80" fill="none" stroke="#00eaff" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
-  <ellipse id="orbit3" cx="450" cy="245" rx="340" ry="110" fill="none" stroke="#39d353" stroke-width="1" stroke-dasharray="8,4" opacity="0.25"/>
-  <ellipse id="orbit4" cx="450" cy="245" rx="420" ry="140" fill="none" stroke="#f7971e" stroke-width="1" stroke-dasharray="10,5" opacity="0.2"/>
+  <!-- === ORBITS (Ellipses with perspective + flowing dashes) === -->
+  <ellipse id="orbit1" cx="450" cy="245" rx="160" ry="50" fill="none" stroke="#7b2ff7" stroke-width="1" stroke-dasharray="4,4" opacity="0.35">
+    <animate attributeName="stroke-dashoffset" values="0;16" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse id="orbit2" cx="450" cy="245" rx="250" ry="80" fill="none" stroke="#00eaff" stroke-width="1" stroke-dasharray="6,4" opacity="0.3">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse id="orbit3" cx="450" cy="245" rx="340" ry="110" fill="none" stroke="#39d353" stroke-width="1" stroke-dasharray="8,4" opacity="0.25">
+    <animate attributeName="stroke-dashoffset" values="0;24" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse id="orbit4" cx="450" cy="245" rx="420" ry="140" fill="none" stroke="#f7971e" stroke-width="1" stroke-dasharray="10,5" opacity="0.2">
+    <animate attributeName="stroke-dashoffset" values="0;-30" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
 
   <!-- === CENTRAL SUN (The Developer Core) === -->
   <g transform="translate(450, 245)">
+    <!-- Rotating corona rays -->
+    <g filter="url(#neonGlow)" opacity="0.45">
+      <g>
+        <line x1="0" y1="-62" x2="0" y2="62" stroke="#c77dff" stroke-width="2"/>
+        <line x1="-62" y1="0" x2="62" y2="0" stroke="#c77dff" stroke-width="2"/>
+        <line x1="-44" y1="-44" x2="44" y2="44" stroke="#00eaff" stroke-width="1.5"/>
+        <line x1="-44" y1="44" x2="44" y2="-44" stroke="#00eaff" stroke-width="1.5"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="26s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <!-- Glow aura -->
     <circle cx="0" cy="0" r="45" fill="url(#sunGrad)" opacity="0.3" filter="url(#strongGlow)">
       <animate attributeName="r" values="40;48;40" dur="4s" repeatCount="indefinite"/>
     </circle>

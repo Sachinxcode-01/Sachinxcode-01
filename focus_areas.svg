@@ -1,0 +1,161 @@
+<svg width="900" height="440" viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgRad" cx="35%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#161b2e"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c77dff"/>
+      <stop offset="50%" stop-color="#00eaff"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <radialGradient id="radarFill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c77dff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#7b2ff7" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#00eaff" stop-opacity="0.18"/>
+    </radialGradient>
+    <linearGradient id="legBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c77dff"/>
+      <stop offset="100%" stop-color="#00eaff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="440" rx="16" fill="url(#bgRad)"/>
+  <rect x="1" y="1" width="898" height="438" rx="15" fill="none" stroke="url(#titleGrad)" stroke-width="1.5" opacity="0.45">
+    <animate attributeName="opacity" values="0.25;0.6;0.25" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="450" y="46" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="22" font-weight="800" fill="url(#titleGrad)" filter="url(#glow)">
+    &#129516; Developer DNA
+  </text>
+  <text x="450" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11" fill="#666" letter-spacing="3">
+    SKILL DISTRIBUTION ACROSS CORE DOMAINS
+  </text>
+
+  <!-- ══════════ RADAR CHART (center 280,250 · maxR 140) ══════════ -->
+
+  <!-- Grid rings -->
+  <g fill="none" stroke="#2a3350" stroke-width="1">
+    <polygon points="280,215 310.31,232.5 310.31,267.5 280,285 249.69,267.5 249.69,232.5"/>
+    <polygon points="280,180 340.62,215 340.62,285 280,320 219.38,285 219.38,215"/>
+    <polygon points="280,145 370.93,197.5 370.93,302.5 280,355 189.07,302.5 189.07,197.5"/>
+    <polygon points="280,110 401.24,180 401.24,320 280,390 158.76,320 158.76,180" stroke="#3a4568"/>
+  </g>
+
+  <!-- Spokes -->
+  <g stroke="#2a3350" stroke-width="1">
+    <line x1="280" y1="250" x2="280" y2="110"/>
+    <line x1="280" y1="250" x2="401.24" y2="180"/>
+    <line x1="280" y1="250" x2="401.24" y2="320"/>
+    <line x1="280" y1="250" x2="280" y2="390"/>
+    <line x1="280" y1="250" x2="158.76" y2="320"/>
+    <line x1="280" y1="250" x2="158.76" y2="180"/>
+  </g>
+
+  <!-- Data polygon (animated from center) -->
+  <polygon points="280,250 280,250 280,250 280,250 280,250 280,250"
+           fill="url(#radarFill)" stroke="#c77dff" stroke-width="2" filter="url(#softGlow)" stroke-linejoin="round">
+    <animate attributeName="points"
+      from="280,250 280,250 280,250 280,250 280,250 280,250"
+      to="280,121.16 379.42,192.6 374.57,304.6 280,350.8 195.13,299 183.01,194"
+      dur="1.6s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.34 0.6 0.2 1" keyTimes="0 1"/>
+    <animate attributeName="stroke-opacity" values="1;0.55;1" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Vertex dots (fade in after polygon draws) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.5s" fill="freeze"/>
+    <circle cx="280" cy="121.16" r="5" fill="#c77dff" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="379.42" cy="192.6" r="5" fill="#00eaff" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="374.57" cy="304.6" r="5" fill="#43e97b" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="350.8" r="5" fill="#ff6b9d" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="195.13" cy="299" r="5" fill="#f7971e" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="183.01" cy="194" r="5" fill="#ff6b6b" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2.4s" begin="2.0s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Axis labels -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="280" y="98"  text-anchor="middle" fill="#c77dff">Frontend</text>
+    <text x="414" y="180" text-anchor="start"  fill="#00eaff">Backend</text>
+    <text x="414" y="312" text-anchor="start"  fill="#43e97b">Database</text>
+    <text x="280" y="412" text-anchor="middle" fill="#ff6b9d">AI / ML</text>
+    <text x="146" y="312" text-anchor="end"    fill="#f7971e">Mobile</text>
+    <text x="146" y="180" text-anchor="end"    fill="#ff6b6b">Tools &amp; DSA</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="500" y1="95" x2="500" y2="390" stroke="#2a3350" stroke-width="1" stroke-dasharray="4,5" opacity="0.6"/>
+
+  <!-- ══════════ LEGEND PANEL (x 540-854) ══════════ -->
+  <text x="540" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700"
+        fill="#8b95a7" letter-spacing="2">PROFICIENCY BREAKDOWN</text>
+
+  <!-- Frontend 92 -> 259.4 -->
+  <circle cx="547" cy="146" r="6" fill="#c77dff"/>
+  <text x="562" y="150" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">Frontend &#183; React / Tailwind</text>
+  <text x="854" y="150" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">92%</text>
+  <rect x="562" y="157" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="157" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="269" dur="1.4s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- Backend 82 -->
+  <circle cx="547" cy="190" r="6" fill="#00eaff"/>
+  <text x="562" y="194" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">Backend &#183; Node / Express / FastAPI</text>
+  <text x="854" y="194" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">82%</text>
+  <rect x="562" y="201" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="201" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="239" dur="1.4s" begin="0.55s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- Database 78 -->
+  <circle cx="547" cy="234" r="6" fill="#43e97b"/>
+  <text x="562" y="238" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">Database &#183; MongoDB</text>
+  <text x="854" y="238" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">78%</text>
+  <rect x="562" y="245" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="245" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="228" dur="1.4s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- AI/ML 72 -->
+  <circle cx="547" cy="278" r="6" fill="#ff6b9d"/>
+  <text x="562" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">AI / ML &#183; Computer Vision</text>
+  <text x="854" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">72%</text>
+  <rect x="562" y="289" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="289" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="210" dur="1.4s" begin="0.85s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- Mobile 70 -->
+  <circle cx="547" cy="322" r="6" fill="#f7971e"/>
+  <text x="562" y="326" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">Mobile &#183; Flutter / Dart</text>
+  <text x="854" y="326" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">70%</text>
+  <rect x="562" y="333" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="333" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="204" dur="1.4s" begin="1.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+
+  <!-- Tools & DSA 80 -->
+  <circle cx="547" cy="366" r="6" fill="#ff6b6b"/>
+  <text x="562" y="370" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#dfe4ec">Tools &amp; DSA &#183; Git / C++</text>
+  <text x="854" y="370" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9aa4b2" text-anchor="end">80%</text>
+  <rect x="562" y="377" width="292" height="6" rx="3" fill="#1e2535"/>
+  <rect x="562" y="377" width="0" height="6" rx="3" fill="url(#legBar)">
+    <animate attributeName="width" from="0" to="234" dur="1.4s" begin="1.15s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0 1"/>
+  </rect>
+</svg>
