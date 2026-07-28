@@ -295,10 +295,13 @@ def generate_svg(dark_mode=True):
 
     svg.append('</svg>')
     
-    filename = 'banner_dark.svg' if dark_mode else 'banner_light.svg'
+    filename = 'dark.svg' if dark_mode else 'light.svg'
     with open(filename, 'w', encoding='utf-8') as f:
         f.write('\n'.join(svg))
-    print(f"Generated {filename} successfully!")
+    alt_filename = 'banner_dark.svg' if dark_mode else 'banner_light.svg'
+    with open(alt_filename, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(svg))
+    print(f"Generated {filename} and {alt_filename} successfully!")
 
 if __name__ == '__main__':
     generate_svg(dark_mode=True)
