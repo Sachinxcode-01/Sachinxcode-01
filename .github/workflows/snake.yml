@@ -1,9 +1,14 @@
-name: GitHub Snake Game
+name: Generate Snake Contribution Grid
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # Run every 12 hours
+    - cron: "0 */12 * * *"
+  
+  # Allows manual triggering from the Actions tab
   workflow_dispatch:
+  
+  # Run on every push to main
   push:
     branches:
       - main
@@ -17,24 +22,21 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Generate GitHub Contributions Snake Animations
-        uses: Platane/snk@v3
+      # Generates a snake game from a github user contributions graph, output a svg animation
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist/github-contribution-grid-snake.svg?color_snake=#10B981&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#22D3EE&color_dots=#2d3343,#0e4429,#006d32,#26a641,#39d353
+
+      # Push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file>
+      - name: Push github-contribution-grid-snake.svg to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: output
-          commit_message: "Update snake animation [skip ci]"
