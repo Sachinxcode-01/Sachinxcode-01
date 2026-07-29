@@ -1,3 +1,10 @@
+<!-- ===== CYBERPUNK ASCII LASER SCAN ANIMATION ===== -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/assets/ascii-laser-intro.gif" width="100%" alt="Cyberpunk ASCII Laser Scan - @Sachinxcode-01" />
+</div>
+
+<br/>
+
 <!-- ===== THEME-AWARE HERO BANNER ===== -->
 <!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
 
