@@ -1,74 +1,45 @@
 [
   {
-    "name": "Aurevia Premium Rentals",
-    "repo": "Sachinxcode-01/aurevia-premium-rentals",
-    "logo": "camera",
-    "description": "Luxury 3D camera rental platform with Next.js, React Three Fiber & Anime.js featuring interactive booking & admin analytics.",
-    "tags": [
-      "NextJS",
-      "TypeScript",
-      "Tailwind",
-      "Three.js"
-    ]
+    "name": "LeadUnity",
+    "repo": "arifhaxn/lead_unity",
+    "logo": "logo.png",
+    "description": "Leading University's defense setup",
+    "tags": ["Flutter", "Dart", "NextJS"]
   },
   {
-    "name": "MediConnect",
-    "repo": "Sachinxcode-01/MediConnect",
-    "logo": "health",
-    "description": "Smart healthcare platform bridging patients and doctors via AI tools, appointment scheduling & electronic health records.",
-    "tags": [
-      "JavaScript",
-      "React",
-      "NodeJS",
-      "AI"
-    ]
+    "name": "OnePick",
+    "repo": "arifhaxn/one_pick",
+    "logo": "op.png",
+    "description": "An One Piece trivia app to find your character",
+    "tags": ["Flutter", "Dart"]
   },
   {
-    "name": "Nexa Voice Assistant",
-    "repo": "Sachinxcode-01/NexaVoiceAssistant",
-    "logo": "mic",
-    "description": "Python AI assistant featuring LiveKit integration, voice interaction, web search, WhatsApp messaging & desktop automation.",
-    "tags": [
-      "Python",
-      "AI",
-      "LiveKit",
-      "Automation"
-    ]
+    "name": "Chessy",
+    "repo": "arifhaxn/chessy",
+    "logo": "chess.png",
+    "description": "Chess timer app for all types of variations",
+    "tags": ["Flutter", "Dart"]
   },
   {
-    "name": "Digital Grievance System",
-    "repo": "Sachinxcode-01/digitalgrievanceredressalsystem",
-    "logo": "shield",
-    "description": "Modern web platform streamlining grievance submission, live tracking, authority routing, and transparent resolutions.",
-    "tags": [
-      "JavaScript",
-      "Express",
-      "NodeJS",
-      "Web"
-    ]
+    "name": "Claster",
+    "repo": "arifhaxn/Claster",
+    "logo": "claster.png",
+    "description": "A class scheduling app for teachers which is used to track routines",
+    "tags": ["Flutter", "Dart", "Firebase"]
   },
   {
-    "name": "KrishiAI",
-    "repo": "Sachinxcode-01/KrishiAI",
-    "logo": "leaf",
-    "description": "AI-powered smart farming platform delivering real-time crop disease diagnosis, yield insights, and weather advisory.",
-    "tags": [
-      "JavaScript",
-      "Python",
-      "AI",
-      "AgriTech"
-    ]
+    "name": "OneTELE",
+    "repo": "arifhaxn/OneTELE---Liilab-Teleprompter",
+    "logo": "onetele.png",
+    "description": "A custom teleprompter for liilab's recording studio",
+    "tags": ["Flutter", "Dart"]
   },
   {
-    "name": "REC Hackathon 1.0",
-    "repo": "Sachinxcode-01/rec-hackathon",
-    "logo": "trophy",
-    "description": "Official hackathon portal featuring team registrations, live leaderboards, team matching, and event schedule management.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Web"
-    ]
+    "name": "Career Logic AI",
+    "repo": "arifhaxn/CareerLogic-AI",
+    "logo": "cl.png",
+    "description": "An AI Powered CV management and assesment system for aspiring career builders",
+    "tags": ["Flutter", "Dart", "Groq"]
   }
 ]
+
