@@ -48,9 +48,9 @@
 <br/>
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects-light.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" alt="Projects" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/projects.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/projects-light.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/projects.svg" alt="Projects" />
 </picture>
 </div>
 
