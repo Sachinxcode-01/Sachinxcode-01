@@ -1,13 +1,53 @@
-<!-- ===== THEME-AWARE HERO BANNER ===== -->
-<!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
-
+<!-- ===== 1. HERO BANNER ===== -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
-  <img alt="Sachin K" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
+  <img alt="Sachin K — Full-Stack, Flutter and AI Developer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
-<!-- ===== GITHUB STATS ===== -->
+<!-- ===== 2. TERMINAL INTRODUCTION ===== -->
+```bash
+$ whoami
+Sachin K — Computer Science Engineering Student
+
+$ current_focus
+Full-Stack Development • Flutter • AI • Cloud • Secure Systems
+
+$ education
+Rural Engineering College, Hulkoti
+
+$ location
+Gadag, Karnataka, India
+```
+
+<!-- ===== 3. TECHNOLOGY STACK ===== -->
+### 🛠️ Technology Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Languages & Core** | ![Python](https://img.shields.io/badge/Python-0A101F?style=for-the-badge&logo=python&logoColor=22D3EE&labelColor=0A101F) ![TypeScript](https://img.shields.io/badge/TypeScript-0A101F?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=0A101F) ![JavaScript](https://img.shields.io/badge/JavaScript-0A101F?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=0A101F) ![Dart](https://img.shields.io/badge/Dart-0A101F?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=0A101F) ![C++](https://img.shields.io/badge/C++-0A101F?style=for-the-badge&logo=cplusplus&logoColor=00599C&labelColor=0A101F) ![HTML5](https://img.shields.io/badge/HTML5-0A101F?style=for-the-badge&logo=html5&logoColor=E34F26&labelColor=0A101F) ![CSS3](https://img.shields.io/badge/CSS3-0A101F?style=for-the-badge&logo=css3&logoColor=1572B6&labelColor=0A101F) |
+| **Frameworks & Libs** | ![Flutter](https://img.shields.io/badge/Flutter-0A101F?style=for-the-badge&logo=flutter&logoColor=02569B&labelColor=0A101F) ![Next.js](https://img.shields.io/badge/Next.js-0A101F?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF&labelColor=0A101F) ![React](https://img.shields.io/badge/React-0A101F?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0A101F) ![Node.js](https://img.shields.io/badge/Node.js-0A101F?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E&labelColor=0A101F) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A101F?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=0A101F) ![Three.js](https://img.shields.io/badge/Three.js-0A101F?style=for-the-badge&logo=threedotjs&logoColor=FFFFFF&labelColor=0A101F) |
+| **AI & Intelligent Systems** | ![Python AI](https://img.shields.io/badge/Voice_AI-0A101F?style=for-the-badge&logo=openai&logoColor=10B981&labelColor=0A101F) ![LiveKit](https://img.shields.io/badge/LiveKit-0A101F?style=for-the-badge&logo=livekit&logoColor=22D3EE&labelColor=0A101F) ![Groq LLM](https://img.shields.io/badge/Groq_API-0A101F?style=for-the-badge&logo=cpu&logoColor=A78BFA&labelColor=0A101F) ![Agritech AI](https://img.shields.io/badge/Agritech_AI-0A101F?style=for-the-badge&logo=leaf&logoColor=10B981&labelColor=0A101F) |
+| **Cloud & Infrastructure** | ![Git](https://img.shields.io/badge/Git-0A101F?style=for-the-badge&logo=git&logoColor=F05032&labelColor=0A101F) ![GitHub](https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0A101F) ![Firebase](https://img.shields.io/badge/Firebase-0A101F?style=for-the-badge&logo=firebase&logoColor=DD2C00&labelColor=0A101F) ![Vercel](https://img.shields.io/badge/Vercel-0A101F?style=for-the-badge&logo=vercel&logoColor=FFFFFF&labelColor=0A101F) |
+| **Developer Tools** | ![VS Code](https://img.shields.io/badge/VS_Code-0A101F?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC&labelColor=0A101F) ![Android Studio](https://img.shields.io/badge/Android_Studio-0A101F?style=for-the-badge&logo=androidstudio&logoColor=3DDC84&labelColor=0A101F) ![Postman](https://img.shields.io/badge/Postman-0A101F?style=for-the-badge&logo=postman&logoColor=FF6C37&labelColor=0A101F) |
+
+<br/>
+
+<!-- ===== 4. FEATURED PROJECTS ===== -->
+### 📌 Featured Projects
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects-light.svg" />
+    <img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" alt="Sachin K's Featured Projects" />
+  </picture>
+</div>
+
+<br/>
+
+<!-- ===== 5. GITHUB STATISTICS ===== -->
+### 📊 GitHub Statistics
 
 <div align="center">
 
@@ -18,6 +58,7 @@
 </picture>
 
 <br/>
+<br/>
 
 <!-- Stats + Top languages — side by side -->
 <picture>
@@ -26,12 +67,29 @@
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=0891B2&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=0891B2&text_color=7C3AED&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
 </picture>
 
 </div>
 
-<!-- ===== CONTRIBUTION SNAKE ===== -->
+<br/>
+
+<!-- ===== 6. CONTRIBUTION ACTIVITY ===== -->
+### 📈 Contribution Activity
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&theme=react-dark&bg_color=0A101F&color=22D3EE&line=A78BFA&point=10B981&area=true&hide_border=true" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&theme=github&hide_border=true" alt="Sachin's Activity Graph" />
+</picture>
+
+</div>
+
+<br/>
+
+<!-- ===== 7. CONTRIBUTION SNAKE ===== -->
+### 🐍 Contribution Snake
 
 <div align="center">
 
@@ -43,19 +101,23 @@
 
 </div>
 
-<!-- ===== END SNAKE ===== -->
 <br/>
-<br/>
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" alt="Projects" />
-</div>
 
-<!-- ===== SOCIAL BADGES ===== -->
+<!-- ===== 8. DEVELOPER FOCUS & CURRENT LEARNING ===== -->
+### 🎯 Developer Focus & Architecture
+
+- 🚀 **Cross-Platform Engineering**: Deepening Flutter & Dart architecture for responsive, high-performance mobile and web apps.
+- 🤖 **Applied AI & Voice Automation**: Building intelligent desktop assistants with voice interaction, LiveKit streams, and LLM integrations.
+- 🌐 **Modern Web Ecosystem**: Developing 3D interactive web platforms using Next.js, TypeScript, Anime.js, and React Three Fiber.
+- 🔒 **Cloud & System Security**: Designing transparent digital grievance redressal platforms and secure healthcare solutions.
+
 <br/>
+
+<!-- ===== 9. SOCIAL & CONTACT BADGES ===== -->
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logoColor=white&labelColor=0A101F&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg==" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logoColor=22D3EE&labelColor=0A101F&logo=linkedin" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.instagram.com/ohh_itz_sachin_/">
@@ -63,15 +125,11 @@
 </a>
 &nbsp;&nbsp;
 <a href="https://www.facebook.com/share/18G1CnZ183">
-  <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=22D3EE&labelColor=0A101F" alt="Facebook" />
+  <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=10B981&labelColor=0A101F" alt="Facebook" />
 </a>
 &nbsp;&nbsp;
 <a href="mailto:kalinganavarsachin@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
+  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=22D3EE&labelColor=0A101F" alt="Email" />
 </a>
-&nbsp;&nbsp;
+
 </div>
-
-<!-- ===== END SOCIAL BADGES ===== -->
-
-<!-- =================================== -->
