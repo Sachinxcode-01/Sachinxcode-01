@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Sachin K — profile.sh --live">
+<title>Sachin K — Cyber Terminal Profile</title>
+<desc>Interactive Live Terminal Hero Banner with Real Photo Dot-Matrix and ASCII Drawing Animation for Sachin K</desc>
 <defs>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#2563EB"><animate attributeName="stop-color" values="#2563EB;#06B6D4;#10B981;#2563EB" dur="10s" repeatCount="indefinite"/></stop>
