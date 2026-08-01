@@ -107,48 +107,52 @@ Phase 4: System Architecture, Cyber Security & Production Systems Engineering ->
 
 <br/>
 
-<!-- ===== 9. GITHUB STATISTICS ===== -->
-### 📊 GitHub Statistics
+<!-- ===== 9. GITHUB ANALYTICS ===== -->
+### 📊 GitHub Analytics
 
 <div align="center">
 
-<!-- Streak — full width -->
+<!-- Row 1 — Overview stats + Language distribution (donut), perfectly aligned -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F" />
+        <img width="100%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github&title_color=0891B2&icon_color=7C3AED&text_color=334155&bg_color=FFFFFF" alt="Sachin's GitHub stats" />
+      </picture>
+    </td>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=donut&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F" />
+        <img width="100%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=donut&langs_count=8&hide_border=true&title_color=0891B2&text_color=334155&bg_color=FFFFFF" alt="Top languages" />
+      </picture>
+    </td>
+  </tr>
+</table>
+
+<!-- Row 2 — Streak (full width) -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" />
   <img width="100%" src="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=FFFFFF&stroke=0891B2&ring=7C3AED&fire=059669&currStreakLabel=0891B2&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0891B2&card_width=1180" alt="Sachin's streak" />
 </picture>
 
-<br/>
-<br/>
-
-<!-- Stats + Top languages — side by side -->
+<!-- Row 3 — Contribution activity line graph (full width) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=0891B2&icon_color=7C3AED&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Sachin's GitHub stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=0891B2&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=0A101F&color=22D3EE&line=A78BFA&point=10B981&area=true&hide_border=true&custom_title=Contribution%20Graph" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=FFFFFF&color=0891B2&line=7C3AED&point=059669&area=true&hide_border=true&custom_title=Contribution%20Graph" alt="Sachin's Contribution Graph" />
 </picture>
 
-</div>
-
-<br/>
-
-<!-- ===== 10. CONTRIBUTION ACTIVITY AND SNAKE ===== -->
-### 📈 Contribution Activity
-
-<div align="center">
-
+<!-- Row 4 — Achievements -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&theme=react-dark&bg_color=0A101F&color=22D3EE&line=A78BFA&point=10B981&area=true&hide_border=true" />
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&theme=github&hide_border=true" alt="Sachin's Activity Graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=algolia&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7&row=1" />
+  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=flat&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7&row=1" alt="GitHub trophies" />
 </picture>
 
 </div>
 
 <br/>
 
+<!-- ===== 10. CONTRIBUTION SNAKE ===== -->
 ### 🐍 Contribution Snake
 
 <div align="center">
