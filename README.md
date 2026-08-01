@@ -128,7 +128,7 @@ Phase 4: System Architecture, Cyber Security & Production Systems Engineering ->
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=0891B2&text_color=7C3AED&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=compact&langs_count=8&hide_border=true&title_color=0891B2&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
 </picture>
 
 </div>
@@ -181,15 +181,15 @@ Phase 4: System Architecture, Cyber Security & Production Systems Engineering ->
 </a>
 &nbsp;&nbsp;
 <a href="https://www.instagram.com/ohh_itz_sachin_/">
-  <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
+  <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.facebook.com/share/18G1CnZ183">
-  <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logoColor=10B981&labelColor=0A101F" alt="Facebook" />
+  <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=10B981&labelColor=0A101F" alt="Facebook" />
 </a>
 &nbsp;&nbsp;
 <a href="mailto:kalinganavarsachin@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logoColor=22D3EE&labelColor=0A101F" alt="Email" />
+  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=22D3EE&labelColor=0A101F" alt="Email" />
 </a>
 
 </div>
