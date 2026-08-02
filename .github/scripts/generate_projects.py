@@ -238,11 +238,18 @@ def build(projects, theme="dark"):
     # header: matches SYSTEM.INFO styling
     a(f'<text x="{MARGIN+2}" y="18" font-size="11" letter-spacing="2" fill="{CYAN}">PROJECTS.LIST</text>')
     a(f'<text x="{MARGIN+130}" y="18" font-size="10" fill="{DIM}">./projects.sh --all</text>')
+    # live indicator (right) — auto-synced from GitHub data
+    a(f'<text x="{W-MARGIN-72}" y="18" text-anchor="end" font-size="9" fill="{DIM}">auto-synced &#8226; live repo data</text>')
+    a(f'<circle cx="{W-MARGIN-54}" cy="14.5" r="3.5" fill="{EMERALD}"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>')
+    a(f'<text x="{W-MARGIN-44}" y="18" font-size="10" font-weight="700" fill="{EMERALD}">LIVE</text>')
     a(f'<line x1="{MARGIN}" y1="28" x2="{W-MARGIN}" y2="28" stroke="url(#{gid})" stroke-width="1.5" opacity="0.7"/>')
     for i, p in enumerate(projects):
         x = MARGIN + (i % 2) * (CARD_W + GAP + 4)
         y = 42 + (i // 2) * (CARD_H + GAP)
         a(card(p, x, y, i))
+    # subtle cyber scan sweep — cohesion with the hero banner
+    a(f'<rect x="0" y="-150" width="{W}" height="150" fill="{CYAN}" opacity="0.035" pointer-events="none">'
+      f'<animate attributeName="y" values="-150;{H}" dur="7s" repeatCount="indefinite"/></rect>')
     a('</svg>')
     return "".join(s)
 

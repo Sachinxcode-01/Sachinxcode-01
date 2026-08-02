@@ -76,7 +76,7 @@ Convert engineering knowledge into practical, production-ready software.
 | :--- | :--- |
 | **Languages & Core** | ![C](https://img.shields.io/badge/C-0A101F?style=for-the-badge&logo=c&logoColor=A8B9CC&labelColor=0A101F) ![Python](https://img.shields.io/badge/Python-0A101F?style=for-the-badge&logo=python&logoColor=22D3EE&labelColor=0A101F) ![TypeScript](https://img.shields.io/badge/TypeScript-0A101F?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=0A101F) ![JavaScript](https://img.shields.io/badge/JavaScript-0A101F?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=0A101F) ![Dart](https://img.shields.io/badge/Dart-0A101F?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=0A101F) ![C++](https://img.shields.io/badge/C++-0A101F?style=for-the-badge&logo=cplusplus&logoColor=00599C&labelColor=0A101F) ![HTML5](https://img.shields.io/badge/HTML5-0A101F?style=for-the-badge&logo=html5&logoColor=E34F26&labelColor=0A101F) ![CSS3](https://img.shields.io/badge/CSS3-0A101F?style=for-the-badge&logo=css3&logoColor=1572B6&labelColor=0A101F) |
 | **Frameworks & Libs** | ![Flutter](https://img.shields.io/badge/Flutter-0A101F?style=for-the-badge&logo=flutter&logoColor=02569B&labelColor=0A101F) ![Next.js](https://img.shields.io/badge/Next.js-0A101F?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF&labelColor=0A101F) ![React](https://img.shields.io/badge/React-0A101F?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0A101F) ![Node.js](https://img.shields.io/badge/Node.js-0A101F?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E&labelColor=0A101F) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A101F?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=0A101F) ![Three.js](https://img.shields.io/badge/Three.js-0A101F?style=for-the-badge&logo=threedotjs&logoColor=FFFFFF&labelColor=0A101F) |
-| **AI & Intelligent Systems** | ![Python AI](https://img.shields.io/badge/Voice_AI-0A101F?style=for-the-badge&logo=openai&logoColor=10B981&labelColor=0A101F) ![LiveKit](https://img.shields.io/badge/LiveKit-0A101F?style=for-the-badge&logo=livekit&logoColor=22D3EE&labelColor=0A101F) ![Groq LLM](https://img.shields.io/badge/Groq_API-0A101F?style=for-the-badge&logo=cpu&logoColor=A78BFA&labelColor=0A101F) ![Agritech AI](https://img.shields.io/badge/Agritech_AI-0A101F?style=for-the-badge&logo=leaf&logoColor=10B981&labelColor=0A101F) |
+| **AI & Intelligent Systems** | ![Voice AI](https://img.shields.io/badge/Voice_AI-0A101F?style=for-the-badge&logo=ollama&logoColor=10B981&labelColor=0A101F) ![LiveKit](https://img.shields.io/badge/LiveKit-0A101F?style=for-the-badge&logo=livekit&logoColor=22D3EE&labelColor=0A101F) ![Groq LLM](https://img.shields.io/badge/Groq_API-0A101F?style=for-the-badge&logo=huggingface&logoColor=A78BFA&labelColor=0A101F) ![Agritech AI](https://img.shields.io/badge/Agritech_AI-0A101F?style=for-the-badge&logo=tensorflow&logoColor=10B981&labelColor=0A101F) |
 | **Cloud & Infrastructure** | ![Git](https://img.shields.io/badge/Git-0A101F?style=for-the-badge&logo=git&logoColor=F05032&labelColor=0A101F) ![GitHub](https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0A101F) ![Firebase](https://img.shields.io/badge/Firebase-0A101F?style=for-the-badge&logo=firebase&logoColor=DD2C00&labelColor=0A101F) ![Vercel](https://img.shields.io/badge/Vercel-0A101F?style=for-the-badge&logo=vercel&logoColor=FFFFFF&labelColor=0A101F) |
 | **Developer Tools** | ![VS Code](https://img.shields.io/badge/VS_Code-0A101F?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC&labelColor=0A101F) ![Android Studio](https://img.shields.io/badge/Android_Studio-0A101F?style=for-the-badge&logo=androidstudio&logoColor=3DDC84&labelColor=0A101F) ![Postman](https://img.shields.io/badge/Postman-0A101F?style=for-the-badge&logo=postman&logoColor=FF6C37&labelColor=0A101F) |
 
@@ -115,13 +115,13 @@ Phase 4: System Architecture, Cyber Security & Production Systems Engineering ->
 <!-- Row 1 — Overview stats + Language distribution (donut), perfectly aligned -->
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="50%" valign="middle" align="center">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F" />
         <img width="100%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=Sachinxcode-01&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github&title_color=0891B2&icon_color=7C3AED&text_color=334155&bg_color=FFFFFF" alt="Sachin's GitHub stats" />
       </picture>
     </td>
-    <td width="50%" valign="top">
+    <td width="50%" valign="middle" align="center">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=donut&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F" />
         <img width="100%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=Sachinxcode-01&layout=donut&langs_count=8&hide_border=true&title_color=0891B2&text_color=334155&bg_color=FFFFFF" alt="Top languages" />
@@ -169,6 +169,16 @@ Phase 4: System Architecture, Cyber Security & Production Systems Engineering ->
 
 <!-- ===== 11. CURRENT MISSION ===== -->
 ### 🎯 Current Mission
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/focus.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/focus-light.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/focus-light.svg" alt="Current mission focus areas" />
+</picture>
+</div>
+
+<br/>
 
 - 🚀 **Cross-Platform Engineering**: Deepening Flutter & Dart architecture for responsive, high-performance mobile and web apps.
 - 🤖 **Applied AI & Voice Automation**: Building intelligent desktop assistants with voice interaction, LiveKit streams, and LLM integrations.
