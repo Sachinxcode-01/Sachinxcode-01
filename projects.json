@@ -1,5 +1,17 @@
 [
   {
+    "name": "SmartFace Attendance",
+    "repo": "Sachinxcode-01/AI-Face-Attendance-System",
+    "logo": "",
+    "description": "Enterprise AI attendance and biometric security with ArcFace face recognition, FastAPI, Flutter and MongoDB.",
+    "tags": ["Flutter", "FastAPI", "ArcFace"],
+    "url": "https://smartattendancesystem-nu.vercel.app",
+    "live": "https://smartattendancesystem-nu.vercel.app",
+    "stars": 1,
+    "pushed_at": "2026-07-27T18:02:43Z",
+    "languages": {"Dart": 1860839, "TypeScript": 652577, "Python": 356339, "JavaScript": 334386, "C++": 27521, "CSS": 10200}
+  },
+  {
     "name": "Aurevia Rentals",
     "repo": "Sachinxcode-01/aurevia-premium-rentals",
     "logo": "",

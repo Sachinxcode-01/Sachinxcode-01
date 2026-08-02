@@ -136,7 +136,9 @@ def card(p, x, y, idx):
     repo = p.get("repo", "").strip()
     repo = repo.replace("https://github.com/", "").replace("http://github.com/", "")
     repo = repo.rstrip("/")
-    href = f"https://github.com/{esc(repo)}"
+    # optional link override (e.g. for private repos, point the card at the live demo)
+    override = (p.get("url") or "").strip()
+    href = esc(override) if override else f"https://github.com/{esc(repo)}"
     a(f'<a href="{href}" target="_blank">')
     a(f'<g opacity="0" transform="translate({x},{y})">')
     a(f'<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{b:.2f}s" fill="freeze"/>')
