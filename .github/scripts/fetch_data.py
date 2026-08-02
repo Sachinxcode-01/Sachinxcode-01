@@ -12,11 +12,13 @@ import json, os, sys, urllib.request
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 def gh(url):
-    req = urllib.request.Request(url, headers={
+    headers = {
         "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {TOKEN}" if TOKEN else "",
         "User-Agent": "projects-panel",
-    })
+    }
+    if TOKEN:
+        headers["Authorization"] = f"Bearer {TOKEN}"
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=15) as r:
         return json.load(r)
 
@@ -33,12 +35,16 @@ def main():
             p["pushed_at"] = info.get("pushed_at")
             if not p.get("description"):
                 p["description"] = info.get("description") or ""
+            # live deployment URL — pulled from the repo's website/homepage field
+            if not p.get("live"):
+                p["live"] = info.get("homepage") or ""
             p["languages"] = gh(f"https://api.github.com/repos/{repo}/languages")
         except Exception as e:
             print(f"warn: could not fetch {repo}: {e}", file=sys.stderr)
             p.setdefault("stars", 0)
             p.setdefault("languages", {})
             p.setdefault("pushed_at", None)
+            p.setdefault("live", "")
     with open("merged.json", "w") as f:
         json.dump(projects, f)
     print(f"merged {len(projects)} projects")

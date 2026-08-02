@@ -219,6 +219,18 @@ def card(p, x, y, idx):
             ly += 18
     a('</g>')
     a('</a>')
+
+    # live-demo pill — separate anchor so both the repo and the deployment are clickable
+    live = (p.get("live") or "").strip()
+    if live:
+        lx = CARD_W - 134
+        a(f'<a href="{esc(live)}" target="_blank">')
+        a(f'<g opacity="0" transform="translate({x},{y})">')
+        a(f'<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{b+0.35:.2f}s" fill="freeze"/>')
+        a(f'<rect x="{lx}" y="143" width="118" height="19" rx="9.5" fill="{EMERALD}" fill-opacity="0.12" stroke="{EMERALD}" stroke-opacity="0.55"/>')
+        a(f'<circle cx="{lx+13}" cy="152.5" r="3" fill="{EMERALD}"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>')
+        a(f'<text x="{lx+24}" y="156" font-size="9.5" font-weight="700" fill="{EMERALD}" letter-spacing="0.5">LIVE DEMO &#8599;</text>')
+        a('</g></a>')
     return "".join(e)
 
 def build(projects, theme="dark"):

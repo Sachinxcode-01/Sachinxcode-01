@@ -85,6 +85,8 @@ Convert engineering knowledge into practical, production-ready software.
 <!-- ===== 7. FEATURED PROJECTS ===== -->
 ### 📌 Featured Projects
 
+> Auto-synced from my repositories &mdash; every card links to its **source code**, and each deployed project has a **Live Demo** button (frontends on Vercel).
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
