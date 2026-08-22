@@ -94,6 +94,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
         <a href="https://github.com/Sachinxcode-01/aurevia-premium-rentals">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="Aurevia Repo" />
         </a>
+        &nbsp;
+        <a href="https://github.com/Sachinxcode-01/aurevia-premium-rentals#system-architecture">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="Aurevia Architecture Deep Dive" />
+        </a>
       </p>
     </td>
   </tr>
@@ -108,6 +112,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
         <a href="https://github.com/Sachinxcode-01/NexaVoiceAssistant">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="Nexa Repo" />
         </a>
+        &nbsp;
+        <a href="https://github.com/Sachinxcode-01/NexaVoiceAssistant#system-architecture--pipelines">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="Nexa Architecture Deep Dive" />
+        </a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -119,6 +127,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
       <p>
         <a href="https://github.com/Sachinxcode-01/KrishiAI">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="KrishiAI Repo" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/Sachinxcode-01/KrishiAI#system-architecture--model-pipeline">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="KrishiAI Architecture Deep Dive" />
         </a>
       </p>
     </td>
@@ -246,11 +258,42 @@ $ git telemetry --analytics --rhythm
   <img alt="Snake eating contributions" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-light.svg" />
 </picture>
 
+<br/>
+
+<!-- Row 5: GitHub Achievements & Trophies -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=darkhub&column=7&no-frame=true&no-bg=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=flat&column=7&no-frame=true&no-bg=true" />
+  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=darkhub&column=7&no-frame=true&no-bg=true" alt="GitHub Trophies" />
+</picture>
+
 </div>
 
 <br/>
 
-<!-- ===== 12. CONNECT & SOCIALS ===== -->
+<!-- ===== 12. LET'S BUILD TOGETHER CTA ===== -->
+### 🤝 Let's Build Something Exceptional
+
+I am actively open to collaborating on:
+- 🤖 **Real-Time AI Agents** (Voice, Vision & Low-Latency LLM Pipelines)
+- 🌐 **Interactive 3D Web Platforms** (Next.js, TypeScript & React Three Fiber)
+- ⚡ **Scalable Microservices & Systems** (FastAPI, Python, Flutter & MongoDB)
+
+<br/>
+
+<div align="center">
+  <a href="mailto:kalinganavarsachin@gmail.com">
+    <img src="https://img.shields.io/badge/📩_Send_Me_An_Email-0A101F?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0A101F" alt="Send Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://calendly.com/sachin-k">
+    <img src="https://img.shields.io/badge/📅_Schedule_A_Call-0A101F?style=for-the-badge&logo=calendly&logoColor=22D3EE&labelColor=0A101F" alt="Schedule A Call" />
+  </a>
+</div>
+
+<br/>
+
+<!-- ===== 13. CONNECT & SOCIALS ===== -->
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
