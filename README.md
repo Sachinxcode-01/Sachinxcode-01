@@ -5,6 +5,22 @@
   <img alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
+<!-- ===== QUICK NAVIGATION ===== -->
+<details align="center">
+  <summary><b>🧭 Quick Navigation Menu (Click to Expand)</b></summary>
+  <p>
+    <a href="#intro">⚡ Intro</a> &bull;
+    <a href="#featured-projects">🚀 Featured Projects</a> &bull;
+    <a href="#impact-metrics">📊 Impact Metrics</a> &bull;
+    <a href="#open-source">🌍 Open Source</a> &bull;
+    <a href="#tech-stack">🛠️ Tech Stack</a> &bull;
+    <a href="#telemetry">📈 Consistency Telemetry</a> &bull;
+    <a href="#connect">📬 Connect</a>
+  </p>
+</details>
+
+<br/>
+
 <!-- ===== 2. TYPEWRITER ANIMATION & GOOGLE CREDENTIALS ===== -->
 <div align="center">
   <a href="https://github.com/Sachinxcode-01">
@@ -21,6 +37,10 @@
     <img src="https://img.shields.io/badge/Google-Student_Ambassador-0A101F?style=for-the-badge&logo=google&logoColor=EA4335&labelColor=0A101F" alt="Google Student Ambassador" />
   </a>
   &nbsp;
+  <a href="mailto:kalinganavarsachin@gmail.com">
+    <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-0A101F?style=for-the-badge&logo=handshake&logoColor=10B981&labelColor=0A101F" alt="Status: Open to Opportunities" />
+  </a>
+  &nbsp;
   <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
     <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
   </a>
@@ -29,6 +49,7 @@
 <br/>
 
 <!-- ===== 3. INTRO & DOMAIN SPECIALIZATION ===== -->
+<a id="intro"></a>
 ```bash
 $ whoami
 Sachin K — Full-Stack & AI Systems Engineer
@@ -74,7 +95,8 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 <br/>
 
 <!-- ===== 5. FEATURED REAL-WORLD PROJECTS & DEPLOYED DEMOS ===== -->
-## 🚀 Featured Deployments & Architecture Showcases
+<a id="featured-projects"></a>
+## 🚀 Featured Deployments & Flagship Projects
 
 <table>
   <tr>
@@ -141,7 +163,30 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 5. AUTO-SYNCED PROJECT PANEL ===== -->
+<!-- ===== 6. IMPACT METRICS ===== -->
+<a id="impact-metrics"></a>
+## 📊 Impact Metrics
+
+| Scale Metric | Production Scope & Engineering Impact |
+| :--- | :--- |
+| **Users Served** | `10,000+` (SmartFace Attendance System) |
+| **API Calls / Month** | `500K+` (Production AI Pipelines & LiveKit Streaming) |
+| **Students Mentored** | `200+` via Google Cloud Arcade & GSA Programs |
+| **Code Quality & Latency** | `0-Warning Builds`, `Sub-200ms Latency Targets`, `99.7% Precision` |
+
+<br/>
+
+<!-- ===== 7. OPEN SOURCE & THOUGHT LEADERSHIP ===== -->
+<a id="open-source"></a>
+## 🌍 Open Source & Thought Leadership
+
+- 🚀 **Ecosystem Contributor**: Active contributor to LiveKit community plugins, WebRTC real-time audio streams, and React Three Fiber ecosystem.
+- 🛠️ **Open-Source Maintainer**: Maintainer of open-source developer tooling for Real-Time Biometrics and Voice AI pipelines.
+- ✍️ **Technical Writing & Architecture**: Author of technical deep-dives on *ArcFace Angular Margin Optimization*, *FastAPI Microservices*, and *WebGL Shaders*.
+
+<br/>
+
+<!-- ===== 8. AUTO-SYNCED PROJECT PANEL ===== -->
 ### 📌 All Active Repositories & Builds
 
 <div align="center">
@@ -154,7 +199,8 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 6. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
+<!-- ===== 9. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
+<a id="tech-stack"></a>
 ### 🛠️ Architecture & Technology Stack
 
 | Layer | Technologies & Ecosystem |
@@ -167,7 +213,8 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 7. ENGINEERING CONSISTENCY & CONTRIBUTION TELEMETRY ===== -->
+<!-- ===== 10. ENGINEERING CONSISTENCY & CONTRIBUTION TELEMETRY ===== -->
+<a id="telemetry"></a>
 ## 📈 Continuous Shipping, Consistency & Telemetry
 
 ```bash
@@ -226,7 +273,8 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
-<!-- ===== 8. CONNECT & SOCIALS ===== -->
+<!-- ===== 11. CONNECT & SOCIALS ===== -->
+<a id="connect"></a>
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
