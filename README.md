@@ -5,25 +5,48 @@
   <img alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
-<!-- ===== 2. INTRO & DOMAIN SPECIALIZATION ===== -->
+<!-- ===== 2. TYPEWRITER ANIMATION & GOOGLE CREDENTIALS ===== -->
+<div align="center">
+  <a href="https://github.com/Sachinxcode-01">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=45&lines=Google+Student+Ambassador+%F0%9F%8E%93;Google+Cloud+Arcade+Facilitator+%E2%98%81%EF%B8%8F;Full-Stack+%26+Applied+AI+Engineer+%E2%9A%A1;Building+Real-Time+Voice+AI+%26+Biometrics+%F0%9F%A4%96" alt="Typing Animation" />
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://cloud.google.com/">
+    <img src="https://img.shields.io/badge/Google_Cloud-Arcade_Facilitator-0A101F?style=for-the-badge&logo=googlecloud&logoColor=4285F4&labelColor=0A101F" alt="Google Cloud Arcade Facilitator" />
+  </a>
+  &nbsp;
+  <a href="https://developers.google.com/">
+    <img src="https://img.shields.io/badge/Google-Student_Ambassador-0A101F?style=for-the-badge&logo=google&logoColor=EA4335&labelColor=0A101F" alt="Google Student Ambassador" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
+  </a>
+</div>
+
+<br/>
+
+<!-- ===== 3. INTRO & DOMAIN SPECIALIZATION ===== -->
 ```bash
 $ whoami
 Sachin K — Full-Stack & AI Systems Engineer
+
+$ leadership_and_programs
+• Google Cloud Arcade Facilitator   :: Cloud Infrastructure • Labs & Hands-On Mentorship
+• Google Student Ambassador (GSA)   :: Developer Ecosystems • Campus Technical Community
 
 $ engineering_focus
 • Product UI & 3D Web      :: Next.js • React • TypeScript • React Three Fiber • Tailwind CSS
 • Applied AI & Real-Time   :: Facial Biometrics (ArcFace) • Voice Agents (LiveKit) • LLM Pipelines
 • Backend & Mobile Systems :: FastAPI • Node.js • Flutter • Dart • MongoDB • Cloud Microservices
 
-$ current_status
+$ mission
 Architecting high-performance web, mobile, and real-time AI applications with production-grade tooling.
 ```
 
 <div align="center">
-  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
-  </a>
-  &nbsp;
   <a href="https://smartattendancesystem-nu.vercel.app">
     <img src="https://img.shields.io/badge/Live_Demos-View_Deployments-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Live Demos" />
   </a>
@@ -39,7 +62,7 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 3. CURRENT FOCUS / LEARNING LOG ===== -->
+<!-- ===== 4. CURRENT FOCUS / LEARNING LOG ===== -->
 ### ⚡ Current Engineering Focus & Active Research
 
 ```markdown
@@ -50,7 +73,7 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 4. FEATURED REAL-WORLD PROJECTS & DEPLOYED DEMOS ===== -->
+<!-- ===== 5. FEATURED REAL-WORLD PROJECTS & DEPLOYED DEMOS ===== -->
 ## 🚀 Featured Deployments & Architecture Showcases
 
 <table>
