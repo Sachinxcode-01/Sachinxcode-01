@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="gr_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#0C1426" stroke="#A78BFA" stroke-width="3" stroke-opacity="0.4"/>
+  <!-- Security Shield & Checkmark -->
+  <path d="M 50 20 L 76 30 V 52 C 76 68 50 82 50 82 C 50 82 24 68 24 52 V 30 Z" fill="none" stroke="url(#gr_grad)" stroke-width="3.5" stroke-linejoin="round"/>
+  <polyline points="38,50 46,58 64,40" fill="none" stroke="#22D3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

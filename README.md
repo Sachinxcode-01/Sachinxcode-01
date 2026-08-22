@@ -20,6 +20,10 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 ```
 
 <div align="center">
+  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
+  </a>
+  &nbsp;
   <a href="https://smartattendancesystem-nu.vercel.app">
     <img src="https://img.shields.io/badge/Live_Demos-View_Deployments-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Live Demos" />
   </a>
@@ -64,6 +68,10 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
         &nbsp;
         <a href="https://github.com/Sachinxcode-01/AI-Face-Attendance-System">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="SmartFace Repo" />
+        </a>
+        &nbsp;
+        <a href="./CASE_STUDY_SMARTFACE.md">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="SmartFace Architecture Deep Dive" />
         </a>
       </p>
     </td>

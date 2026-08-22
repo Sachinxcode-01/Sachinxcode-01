@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="mc_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#0C1426" stroke="#22D3EE" stroke-width="3" stroke-opacity="0.4"/>
+  <!-- Healthcare Medical Cross + Pulse -->
+  <path d="M 42 24 H 58 V 42 H 76 V 58 H 58 V 76 H 42 V 58 H 24 V 42 H 42 Z" fill="none" stroke="url(#mc_grad)" stroke-width="3.5" stroke-linejoin="round"/>
+  <polyline points="28,50 38,50 44,38 52,62 58,46 64,50 72,50" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

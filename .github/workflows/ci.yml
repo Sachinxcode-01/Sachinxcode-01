@@ -1,0 +1,50 @@
+name: CI Quality & Build Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate-and-test:
+    name: Validate Profile Assets & Generators
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate JSON Files
+        run: |
+          python3 -c "import json; json.load(open('projects.json')); print('✓ projects.json is valid')"
+          if [ -f "merged.json" ]; then
+            python3 -c "import json; json.load(open('merged.json')); print('✓ merged.json is valid')"
+          fi
+
+      - name: Validate Referenced Logos
+        run: |
+          python3 -c "
+          import json, os
+          data = json.load(open('projects.json'))
+          missing = []
+          for p in data:
+              logo = p.get('logo')
+              if logo and not os.path.exists(os.path.join('logos', logo)):
+                  missing.append(logo)
+          if missing:
+              raise FileNotFoundError(f'Missing logo files: {missing}')
+          print('✓ All referenced logos verified successfully')
+          "
+
+      - name: Test Project Panel SVG Generation
+        run: |
+          python3 .github/scripts/generate_projects.py projects.json .
+          test -f projects.svg
+          test -f projects-light.svg
+          echo "✓ Generated projects.svg and projects-light.svg successfully"

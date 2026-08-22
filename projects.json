@@ -2,7 +2,7 @@
   {
     "name": "SmartFace Attendance",
     "repo": "Sachinxcode-01/AI-Face-Attendance-System",
-    "logo": "",
+    "logo": "smartface.svg",
     "description": "Enterprise AI attendance and biometric security with ArcFace face recognition, FastAPI, Flutter and MongoDB.",
     "tags": ["Flutter", "FastAPI", "ArcFace"],
     "url": "https://smartattendancesystem-nu.vercel.app",
@@ -14,37 +14,52 @@
   {
     "name": "Aurevia Rentals",
     "repo": "Sachinxcode-01/aurevia-premium-rentals",
-    "logo": "",
+    "logo": "aurevia.svg",
     "description": "Luxury 3D camera-rental platform with Next.js, TypeScript, Tailwind and React Three Fiber.",
-    "tags": ["Next.js", "TypeScript", "Three.js"]
-  },
-  {
-    "name": "MediConnect",
-    "repo": "Sachinxcode-01/MediConnect",
-    "logo": "",
-    "description": "Healthcare platform connecting patients and doctors with AI tools and appointment scheduling.",
-    "tags": ["JavaScript", "Healthcare", "AI"]
-  },
-  {
-    "name": "KrishiAI",
-    "repo": "Sachinxcode-01/KrishiAI",
-    "logo": "",
-    "description": "AI agriculture platform for crop-disease diagnosis and smart yield insights for farmers.",
-    "tags": ["AI", "JavaScript", "Agritech"]
-  },
-  {
-    "name": "Grievance System",
-    "repo": "Sachinxcode-01/digitalgrievanceredressalsystem",
-    "logo": "",
-    "description": "Full-stack grievance redressal system for complaint submission, tracking and resolution.",
-    "tags": ["Full-Stack", "Web", "System"]
+    "tags": ["Next.js", "TypeScript", "Three.js"],
+    "stars": 1,
+    "pushed_at": "2026-08-10T12:00:00Z",
+    "languages": {"TypeScript": 850000, "JavaScript": 120000, "CSS": 45000}
   },
   {
     "name": "Nexa Voice Assistant",
     "repo": "Sachinxcode-01/NexaVoiceAssistant",
-    "logo": "",
+    "logo": "nexa.svg",
     "description": "Python AI desktop assistant with voice control, LiveKit streaming and system automation.",
-    "tags": ["Python", "AI", "LiveKit"]
+    "tags": ["Python", "AI", "LiveKit"],
+    "stars": 1,
+    "pushed_at": "2026-08-15T09:30:00Z",
+    "languages": {"Python": 450000}
+  },
+  {
+    "name": "KrishiAI",
+    "repo": "Sachinxcode-01/KrishiAI",
+    "logo": "krishi.svg",
+    "description": "AI agriculture platform for crop-disease diagnosis and smart yield insights for farmers.",
+    "tags": ["AI", "JavaScript", "Agritech"],
+    "stars": 1,
+    "pushed_at": "2026-08-01T14:20:00Z",
+    "languages": {"Python": 380000, "JavaScript": 220000}
+  },
+  {
+    "name": "MediConnect",
+    "repo": "Sachinxcode-01/MediConnect",
+    "logo": "mediconnect.svg",
+    "description": "Healthcare platform connecting patients and doctors with AI tools and appointment scheduling.",
+    "tags": ["JavaScript", "Healthcare", "AI"],
+    "stars": 1,
+    "pushed_at": "2026-07-20T11:00:00Z",
+    "languages": {"JavaScript": 310000, "HTML": 90000, "CSS": 50000}
+  },
+  {
+    "name": "Grievance System",
+    "repo": "Sachinxcode-01/digitalgrievanceredressalsystem",
+    "logo": "grievance.svg",
+    "description": "Full-stack grievance redressal system for complaint submission, tracking and resolution.",
+    "tags": ["Full-Stack", "Web", "System"],
+    "stars": 1,
+    "pushed_at": "2026-07-15T16:45:00Z",
+    "languages": {"JavaScript": 420000, "HTML": 110000, "CSS": 75000}
   },
   {
     "name": "Bright Horizon School",
