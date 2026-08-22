@@ -24,11 +24,15 @@
   <a href="mailto:kalinganavarsachin@gmail.com">
     <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-0A101F?style=for-the-badge&logo=handshake&logoColor=10B981&labelColor=0A101F" alt="Status: Open to Opportunities" />
   </a>
+  &nbsp;
+  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
+  </a>
 </div>
 
 <br/>
 
-<!-- ===== 3. CORE DOMAINS (MOBILE-FRIENDLY, NO HORIZONTAL SCROLL) ===== -->
+<!-- ===== 3. CORE DOMAINS ===== -->
 ### ⚡ Full-Stack & AI Systems Engineer
 
 Building scalable, production-grade applications with real-time AI and fluid interactive user experiences.
@@ -51,24 +55,11 @@ Building scalable, production-grade applications with real-time AI and fluid int
   <a href="mailto:kalinganavarsachin@gmail.com">
     <img src="https://img.shields.io/badge/Contact-Get_In_Touch-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Contact" />
   </a>
-  &nbsp;
-  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
-  </a>
 </div>
 
 <br/>
 
-<!-- ===== 4. CURRENT FOCUS ===== -->
-### 🔭 Current Focus & Active Research
-
-- 🎙️ **Building**: Sub-second voice AI agent pipelines using LiveKit, FastAPI, and Groq LLM inference.
-- 🎯 **Optimizing**: Real-time facial biometric authentication & anti-spoofing with ArcFace models.
-- 📖 **Exploring**: Distributed state synchronization and WebGL shader pipelines with Three.js.
-
-<br/>
-
-<!-- ===== 5. FEATURED DEPLOYMENTS & FLAGSHIP PROJECTS ===== -->
+<!-- ===== 4. FEATURED DEPLOYMENTS & FLAGSHIP PROJECTS ===== -->
 ## 🚀 Featured Deployments & Flagship Projects
 
 <table>
@@ -136,7 +127,24 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 6. IMPACT METRICS ===== -->
+<!-- ===== 5. CURRENT FOCUS ===== -->
+### 🔭 Current Focus & Active Research
+
+- **Building:** Full-stack institutional workflows (*Digital Grievance Redressal*) & real-time biometric access control pipelines.
+- **Experimenting With:** Advanced Next.js state patterns, local AI execution frameworks (Groq/Ollama), and Go microservices.
+
+<br/>
+
+<!-- ===== 6. ENGINEERING APPROACH ===== -->
+### 💻 Engineering Approach & Principles
+
+- **Architecture First:** Prioritizing clean system design, modular backend code, and intuitive 3D / cross-platform UI/UX.
+- **Predictable Code:** Writing self-documenting code with structured exception handling, strict type safety, and clean environment separation.
+- **Performance Targets:** Enforcing sub-200ms API response latency and zero-warning automated CI/CD builds.
+
+<br/>
+
+<!-- ===== 7. IMPACT METRICS ===== -->
 ## 📊 Impact Metrics
 
 | Scale Metric | Production Scope & Engineering Impact |
@@ -148,7 +156,7 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 7. OPEN SOURCE & THOUGHT LEADERSHIP ===== -->
+<!-- ===== 8. OPEN SOURCE & THOUGHT LEADERSHIP ===== -->
 ## 🌍 Open Source & Thought Leadership
 
 - 🚀 **Ecosystem Contributor**: Active contributor to LiveKit community plugins, WebRTC real-time audio streams, and React Three Fiber ecosystem.
@@ -157,7 +165,7 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 8. AUTO-SYNCED PROJECT PANEL ===== -->
+<!-- ===== 9. AUTO-SYNCED PROJECT PANEL ===== -->
 ### 📌 All Active Repositories & Builds
 
 <div align="center">
@@ -170,7 +178,7 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 9. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
+<!-- ===== 10. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
 ### 🛠️ Architecture & Technology Stack
 
 | Layer | Technologies & Ecosystem |
@@ -183,7 +191,7 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 10. ENGINEERING CONSISTENCY & CONTRIBUTION TELEMETRY ===== -->
+<!-- ===== 11. ENGINEERING CONSISTENCY & TELEMETRY ===== -->
 ## 📈 Continuous Shipping, Consistency & Telemetry
 
 ```bash
@@ -242,7 +250,7 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
-<!-- ===== 11. CONNECT & SOCIALS ===== -->
+<!-- ===== 12. CONNECT & SOCIALS ===== -->
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
