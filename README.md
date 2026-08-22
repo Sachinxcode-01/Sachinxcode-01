@@ -167,11 +167,35 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 
 <br/>
 
-<!-- ===== 7. MINIMAL ANALYTICS & FOOTER ===== -->
-### 📊 GitHub Activity & Metrics
+<!-- ===== 7. ENGINEERING CONSISTENCY & CONTRIBUTION TELEMETRY ===== -->
+## 📈 Continuous Shipping, Consistency & Telemetry
+
+```bash
+$ git telemetry --analytics --rhythm
+• Daily Commitment Rhythm   :: Active daily code shipments, continuous refactoring & feature releases
+• Automated Deployment Pulse :: CI/CD pipelines validating test suites & live deployments on Vercel
+• Code Quality Standard     :: Modular architecture, type safety, sub-200ms latency targets & 0-warning builds
+```
 
 <div align="center">
 
+<!-- Row 1: Streak Stats (Full Width) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=FFFFFF&stroke=0891B2&ring=7C3AED&fire=059669&currStreakLabel=0891B2&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0891B2&card_width=1180" alt="Sachin's GitHub Streak Telemetry" />
+</picture>
+
+<br/>
+
+<!-- Row 2: Real-time Commit Velocity & Activity Curve -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=0A101F&color=22D3EE&line=A78BFA&point=10B981&area=true&hide_border=true&custom_title=Continuous%20Shipping%20Velocity" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=FFFFFF&color=0891B2&line=7C3AED&point=059669&area=true&hide_border=true&custom_title=Continuous%20Shipping%20Velocity" alt="Continuous Shipping Velocity" />
+</picture>
+
+<br/>
+
+<!-- Row 3: Overview stats + Language Distribution -->
 <table>
   <tr>
     <td width="50%" valign="middle" align="center">
@@ -189,6 +213,9 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
   </tr>
 </table>
 
+<br/>
+
+<!-- Row 4: Contribution Snake -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-light.svg" />
