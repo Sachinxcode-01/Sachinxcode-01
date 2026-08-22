@@ -5,26 +5,10 @@
   <img alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
-<!-- ===== QUICK NAVIGATION ===== -->
-<details align="center">
-  <summary><b>🧭 Quick Navigation Menu (Click to Expand)</b></summary>
-  <p>
-    <a href="#intro">⚡ Intro</a> &bull;
-    <a href="#featured-projects">🚀 Featured Projects</a> &bull;
-    <a href="#impact-metrics">📊 Impact Metrics</a> &bull;
-    <a href="#open-source">🌍 Open Source</a> &bull;
-    <a href="#tech-stack">🛠️ Tech Stack</a> &bull;
-    <a href="#telemetry">📈 Consistency Telemetry</a> &bull;
-    <a href="#connect">📬 Connect</a>
-  </p>
-</details>
-
-<br/>
-
-<!-- ===== 2. TYPEWRITER ANIMATION & GOOGLE CREDENTIALS ===== -->
+<!-- ===== 2. TYPEWRITER & CREDENTIALS ===== -->
 <div align="center">
   <a href="https://github.com/Sachinxcode-01">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=45&lines=Google+Student+Ambassador+%F0%9F%8E%93;Google+Cloud+Arcade+Facilitator+%E2%98%81%EF%B8%8F;Full-Stack+%26+Applied+AI+Engineer+%E2%9A%A1;Building+Real-Time+Voice+AI+%26+Biometrics+%F0%9F%A4%96" alt="Typing Animation" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=40&lines=Google+Student+Ambassador+%F0%9F%8E%93;Google+Cloud+Arcade+Facilitator+%E2%98%81%EF%B8%8F;Full-Stack+%26+AI+Systems+Engineer+%E2%9A%A1;Building+Real-Time+Voice+AI+%26+Biometrics+%F0%9F%A4%96" alt="Typing Animation" />
   </a>
 </div>
 
@@ -40,32 +24,20 @@
   <a href="mailto:kalinganavarsachin@gmail.com">
     <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-0A101F?style=for-the-badge&logo=handshake&logoColor=10B981&labelColor=0A101F" alt="Status: Open to Opportunities" />
   </a>
-  &nbsp;
-  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
-  </a>
 </div>
 
 <br/>
 
-<!-- ===== 3. INTRO & DOMAIN SPECIALIZATION ===== -->
-<a id="intro"></a>
-```bash
-$ whoami
-Sachin K — Full-Stack & AI Systems Engineer
+<!-- ===== 3. CORE DOMAINS (MOBILE-FRIENDLY, NO HORIZONTAL SCROLL) ===== -->
+### ⚡ Full-Stack & AI Systems Engineer
 
-$ leadership_and_programs
-• Google Cloud Arcade Facilitator   :: Cloud Infrastructure • Labs & Hands-On Mentorship
-• Google Student Ambassador (GSA)   :: Developer Ecosystems • Campus Technical Community
+Building scalable, production-grade applications with real-time AI and fluid interactive user experiences.
 
-$ engineering_focus
-• Product UI & 3D Web      :: Next.js • React • TypeScript • React Three Fiber • Tailwind CSS
-• Applied AI & Real-Time   :: Facial Biometrics (ArcFace) • Voice Agents (LiveKit) • LLM Pipelines
-• Backend & Mobile Systems :: FastAPI • Node.js • Flutter • Dart • MongoDB • Cloud Microservices
+- 🌐 **Full-Stack & 3D Web** — Next.js, React, TypeScript, React Three Fiber & Tailwind CSS
+- 🤖 **Applied AI & Real-Time** — Facial Biometrics (ArcFace), Voice Agents (LiveKit) & FastAPI Pipelines
+- 📱 **Mobile & Cloud Backends** — Cross-platform apps with Flutter, Dart, MongoDB & Firebase
 
-$ mission
-Architecting high-performance web, mobile, and real-time AI applications with production-grade tooling.
-```
+<br/>
 
 <div align="center">
   <a href="https://smartattendancesystem-nu.vercel.app">
@@ -79,23 +51,24 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
   <a href="mailto:kalinganavarsachin@gmail.com">
     <img src="https://img.shields.io/badge/Contact-Get_In_Touch-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Contact" />
   </a>
+  &nbsp;
+  <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
+  </a>
 </div>
 
 <br/>
 
-<!-- ===== 4. CURRENT FOCUS / LEARNING LOG ===== -->
-### ⚡ Current Engineering Focus & Active Research
+<!-- ===== 4. CURRENT FOCUS ===== -->
+### 🔭 Current Focus & Active Research
 
-```markdown
-🔭 Building   :: Sub-second voice AI agent pipelines using LiveKit, FastAPI & Groq LLM inference.
-⚡ Optimizing :: Real-time facial biometric authentication & anti-spoofing with ArcFace models.
-📖 Exploring  :: Distributed state synchronization, WebGL shader pipelines, and Flutter web rendering.
-```
+- 🎙️ **Building**: Sub-second voice AI agent pipelines using LiveKit, FastAPI, and Groq LLM inference.
+- 🎯 **Optimizing**: Real-time facial biometric authentication & anti-spoofing with ArcFace models.
+- 📖 **Exploring**: Distributed state synchronization and WebGL shader pipelines with Three.js.
 
 <br/>
 
-<!-- ===== 5. FEATURED REAL-WORLD PROJECTS & DEPLOYED DEMOS ===== -->
-<a id="featured-projects"></a>
+<!-- ===== 5. FEATURED DEPLOYMENTS & FLAGSHIP PROJECTS ===== -->
 ## 🚀 Featured Deployments & Flagship Projects
 
 <table>
@@ -164,7 +137,6 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 <br/>
 
 <!-- ===== 6. IMPACT METRICS ===== -->
-<a id="impact-metrics"></a>
 ## 📊 Impact Metrics
 
 | Scale Metric | Production Scope & Engineering Impact |
@@ -172,12 +144,11 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 | **Users Served** | `10,000+` (SmartFace Attendance System) |
 | **API Calls / Month** | `500K+` (Production AI Pipelines & LiveKit Streaming) |
 | **Students Mentored** | `200+` via Google Cloud Arcade & GSA Programs |
-| **Code Quality & Latency** | `0-Warning Builds`, `Sub-200ms Latency Targets`, `99.7% Precision` |
+| **Code Quality & Latency** | `0-Warning Builds`, `< 180ms Latency Targets`, `99.7% Precision` |
 
 <br/>
 
 <!-- ===== 7. OPEN SOURCE & THOUGHT LEADERSHIP ===== -->
-<a id="open-source"></a>
 ## 🌍 Open Source & Thought Leadership
 
 - 🚀 **Ecosystem Contributor**: Active contributor to LiveKit community plugins, WebRTC real-time audio streams, and React Three Fiber ecosystem.
@@ -200,7 +171,6 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 <br/>
 
 <!-- ===== 9. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
-<a id="tech-stack"></a>
 ### 🛠️ Architecture & Technology Stack
 
 | Layer | Technologies & Ecosystem |
@@ -214,7 +184,6 @@ Architecting high-performance web, mobile, and real-time AI applications with pr
 <br/>
 
 <!-- ===== 10. ENGINEERING CONSISTENCY & CONTRIBUTION TELEMETRY ===== -->
-<a id="telemetry"></a>
 ## 📈 Continuous Shipping, Consistency & Telemetry
 
 ```bash
@@ -274,7 +243,6 @@ $ git telemetry --analytics --rhythm
 <br/>
 
 <!-- ===== 11. CONNECT & SOCIALS ===== -->
-<a id="connect"></a>
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
