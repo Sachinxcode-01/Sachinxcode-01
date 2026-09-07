@@ -244,15 +244,7 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
-<!-- Row 2: Real-time Commit Velocity & Activity Curve -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=0A101F&color=22D3EE&line=A78BFA&point=10B981&area=true&hide_border=true&custom_title=Continuous%20Shipping%20Velocity" />
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sachinxcode-01&bg_color=FFFFFF&color=0891B2&line=7C3AED&point=059669&area=true&hide_border=true&custom_title=Continuous%20Shipping%20Velocity" alt="Continuous Shipping Velocity" />
-</picture>
-
-<br/>
-
-<!-- Row 3: Overview stats + Language Distribution -->
+<!-- Row 2: Overview stats + Language Distribution -->
 <table>
   <tr>
     <td width="50%" valign="middle" align="center">
@@ -272,20 +264,11 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
-<!-- Row 4: Contribution Snake -->
+<!-- Row 3: Contribution Snake -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-light.svg" />
   <img alt="Snake eating contributions" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-light.svg" />
-</picture>
-
-<br/>
-
-<!-- Row 5: GitHub Achievements & Trophies -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=darkhub&column=7&no-frame=true&no-bg=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=flat&column=7&no-frame=true&no-bg=true" />
-  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=Sachinxcode-01&theme=darkhub&column=7&no-frame=true&no-bg=true" alt="GitHub Trophies" />
 </picture>
 
 </div>
