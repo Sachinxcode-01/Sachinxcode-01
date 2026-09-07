@@ -32,6 +32,16 @@
 
 <br/>
 
+<div align="center">
+  <a href="#-featured-deployments--flagship-projects"><code>🚀 Projects</code></a> &nbsp;•&nbsp;
+  <a href="#-google-leadership--community-impact"><code>🎓 Leadership</code></a> &nbsp;•&nbsp;
+  <a href="#️-architecture--technology-stack"><code>🛠️ Tech Stack</code></a> &nbsp;•&nbsp;
+  <a href="#-continuous-shipping-consistency--telemetry"><code>📈 Telemetry</code></a> &nbsp;•&nbsp;
+  <a href="#-lets-build-something-exceptional"><code>🤝 Contact</code></a>
+</div>
+
+<br/>
+
 <!-- ===== 3. CORE DOMAINS ===== -->
 ### ⚡ Full-Stack & AI Systems Engineer
 
@@ -75,8 +85,8 @@ Building scalable, production-grade applications with real-time AI and fluid int
           <img src="https://img.shields.io/badge/🌐_Live_Demo-Vercel-0A101F?style=flat-square&logo=vercel&logoColor=22D3EE" alt="SmartFace Demo" />
         </a>
         &nbsp;
-        <a href="https://github.com/Sachinxcode-01/AI-Face-Attendance-System">
-          <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="SmartFace Repo" />
+        <a href="./CASE_STUDY_SMARTFACE.md">
+          <img src="https://img.shields.io/badge/🔒_Repository-Enterprise_Private-0A101F?style=flat-square&logo=github&logoColor=94A3B8" alt="SmartFace Private Repo" />
         </a>
         &nbsp;
         <a href="./CASE_STUDY_SMARTFACE.md">
@@ -131,6 +141,32 @@ Building scalable, production-grade applications with real-time AI and fluid int
         &nbsp;
         <a href="https://github.com/Sachinxcode-01/KrishiAI#system-architecture--model-pipeline">
           <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="KrishiAI Architecture Deep Dive" />
+        </a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🏛️ Digital Grievance Redressal</h3>
+      <p>Institutional grievance workflow engine with role-based administrative escalation, transparent auditing, and automated status alerts.</p>
+      <p>
+        <code>Next.js</code> • <code>TypeScript</code> • <code>Node.js</code> • <code>MongoDB</code> • <code>Tailwind CSS</code>
+      </p>
+      <p>
+        <a href="https://github.com/Sachinxcode-01/digitalgrievanceredressalsystem">
+          <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="Digital Grievance Repo" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🩺 MediConnect Healthcare Platform</h3>
+      <p>Intelligent healthcare ecosystem bridging patients and doctors with AI-assisted health triage, appointment management, and encrypted medical records.</p>
+      <p>
+        <code>AI Health</code> • <code>Full-Stack</code> • <code>React</code> • <code>Node.js</code> • <code>MongoDB</code>
+      </p>
+      <p>
+        <a href="https://github.com/Sachinxcode-01/MediConnect">
+          <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="MediConnect Repo" />
         </a>
       </p>
     </td>
