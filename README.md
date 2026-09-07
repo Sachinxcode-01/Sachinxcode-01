@@ -177,16 +177,37 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 9. AUTO-SYNCED PROJECT PANEL ===== -->
-### 📌 All Active Repositories & Builds
+<!-- ===== 9. GOOGLE LEADERSHIP & COMMUNITY IMPACT ===== -->
+### 🎓 Google Leadership & Community Impact
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects-light.svg" />
-    <img width="100%" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" alt="Sachin K's Projects Showcase" />
-  </picture>
-</div>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>☁️ Google Cloud Arcade Facilitator</h3>
+      <p>Organized hands-on cloud computing workshops and guided 200+ students through Google Cloud infrastructure, BigQuery pipelines, and IAM architecture.</p>
+      <p>
+        <code>Google Cloud</code> • <code>Architecture Labs</code> • <code>Cloud Shell</code> • <code>BigQuery</code>
+      </p>
+      <p>
+        <a href="https://cloud.google.com/">
+          <img src="https://img.shields.io/badge/Google_Cloud-Facilitator-0A101F?style=flat-square&logo=googlecloud&logoColor=4285F4" alt="Google Cloud Facilitator" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎓 Google Student Ambassador</h3>
+      <p>Representing developer ecosystems on campus, fostering peer technical communities, and hosting workshops on full-stack web, mobile, and real-time AI systems.</p>
+      <p>
+        <code>Community Building</code> • <code>Technical Mentorship</code> • <code>Hackathons</code> • <code>AI Workshops</code>
+      </p>
+      <p>
+        <a href="https://developers.google.com/">
+          <img src="https://img.shields.io/badge/Google-Student_Ambassador-0A101F?style=flat-square&logo=google&logoColor=EA4335" alt="Google Student Ambassador" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
