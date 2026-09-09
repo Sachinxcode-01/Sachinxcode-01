@@ -192,15 +192,17 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 7. IMPACT METRICS ===== -->
-## 📊 Impact Metrics
+<!-- ===== 7. BY THE NUMBERS ===== -->
+## 📊 By the Numbers
 
-| Scale Metric | Production Scope & Engineering Impact |
+| Metric | Detail |
 | :--- | :--- |
-| **Users Served** | `10,000+` (SmartFace Attendance System) |
-| **API Calls / Month** | `500K+` (Production AI Pipelines & LiveKit Streaming) |
-| **Students Mentored** | `200+` via Google Cloud Arcade & GSA Programs |
-| **Code Quality & Latency** | `0-Warning Builds`, `< 180ms Latency Targets`, `99.7% Precision` |
+| **Featured Projects** | `9` — spanning full-stack web, mobile & AI |
+| **Live Deployments** | `8` production apps shipped on Vercel |
+| **Repositories** | `20+` public & private |
+| **Languages** | `6+` — Dart, TypeScript, Python, JavaScript, C++, SQL |
+| **Core Domains** | Full-Stack Web · Flutter Mobile · AI & Computer Vision |
+| **Flagship Build** | SmartFace — ArcFace recognition · FastAPI · Flutter · MongoDB |
 
 <br/>
 
