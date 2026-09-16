@@ -33,6 +33,7 @@
 <br/>
 
 <div align="center">
+  <a href="https://sachinxcoder-chi.vercel.app/"><code>🌐 Portfolio</code></a> &nbsp;•&nbsp;
   <a href="#-featured-deployments--flagship-projects"><code>🚀 Projects</code></a> &nbsp;•&nbsp;
   <a href="#-google-leadership--community-impact"><code>🎓 Leadership</code></a> &nbsp;•&nbsp;
   <a href="#️-architecture--technology-stack"><code>🛠️ Tech Stack</code></a> &nbsp;•&nbsp;
@@ -54,6 +55,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
 <br/>
 
 <div align="center">
+  <a href="https://sachinxcoder-chi.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit_Website-0A101F?style=for-the-badge&logo=googlechrome&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio Website" />
+  </a>
+  &nbsp;
   <a href="https://smartattendancesystem-nu.vercel.app">
     <img src="https://img.shields.io/badge/Live_Demos-View_Deployments-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Live Demos" />
   </a>
@@ -338,6 +343,10 @@ I am actively open to collaborating on:
 <!-- ===== 13. CONNECT & SOCIALS ===== -->
 <div align="center">
 
+<a href="https://sachinxcoder-chi.vercel.app/">
+  <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logoColor=22D3EE&labelColor=0A101F&logo=safari" alt="Portfolio" />
+</a>
+&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/sachin-k-5b6689322/">
   <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logoColor=22D3EE&labelColor=0A101F&logo=linkedin" alt="LinkedIn" />
 </a>
