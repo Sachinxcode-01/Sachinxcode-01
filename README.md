@@ -314,7 +314,35 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
-<!-- Row 3: Contribution Snake -->
+<!-- Row 3: Activity Graph (Full Width Contribution Heatmap) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sachinxcode-01&theme=github_dark" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sachinxcode-01&theme=github" alt="Sachin's Contribution Activity Graph" />
+</picture>
+
+<br/>
+
+<!-- Row 4: Language Commits + Productive Time -->
+<table>
+  <tr>
+    <td width="50%" valign="middle" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachinxcode-01&theme=github_dark" />
+        <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachinxcode-01&theme=github" alt="Most Commit Language" />
+      </picture>
+    </td>
+    <td width="50%" valign="middle" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sachinxcode-01&theme=github_dark&utcOffset=5.5" />
+        <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sachinxcode-01&theme=github&utcOffset=5.5" alt="Productive Time of Day" />
+      </picture>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- Row 5: Contribution Snake -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/output/snake-light.svg" />
