@@ -28,6 +28,8 @@
   <a href="https://github.com/Sachinxcode-01/Sachinxcode-01/actions/workflows/ci.yml">
     <img src="https://img.shields.io/badge/CI_Quality-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F" alt="CI Quality Status" />
   </a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Profile%20Views&color=22D3EE&style=for-the-badge" alt="Profile Views" />
 </div>
 
 <br/>
@@ -204,6 +206,7 @@ Building scalable, production-grade applications with real-time AI and fluid int
 | :--- | :--- |
 | **Featured Projects** | `9` — spanning full-stack web, mobile & AI |
 | **Live Deployments** | `8` production apps shipped on Vercel |
+| **Profile Views** | ![Profile Views](https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Views&color=22D3EE&style=flat-square) real-time visitors |
 | **Repositories** | `20+` public & private |
 | **Languages** | `6+` — Dart, TypeScript, Python, JavaScript, C++, SQL |
 | **Core Domains** | Full-Stack Web · Flutter Mobile · AI & Computer Vision |
@@ -278,6 +281,10 @@ $ git telemetry --analytics --rhythm
 ```
 
 <div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=Sachinxcode-01&label=Real-Time%20Profile%20Views&color=22D3EE&style=for-the-badge" alt="Real-Time Profile Views" />
+
+<br/><br/>
 
 <!-- Row 1: Streak Stats (Full Width) -->
 <picture>
