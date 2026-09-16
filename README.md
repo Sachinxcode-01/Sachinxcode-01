@@ -353,6 +353,17 @@ $ git telemetry --analytics --rhythm
 
 <br/>
 
+<!-- ===== DYNAMIC DEVELOPER INSPIRATION ===== -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+    <source media="(prefers-color-scheme: light)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=clean" />
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=clean" alt="Dynamic Developer Quote" />
+  </picture>
+</div>
+
+<br/>
+
 <!-- ===== 12. LET'S BUILD TOGETHER CTA ===== -->
 ### 🤝 Let's Build Something Exceptional
 
