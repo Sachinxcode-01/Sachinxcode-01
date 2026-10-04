@@ -2,7 +2,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
-  <img alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
+  <img width="100%" alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
 <!-- ===== 2. TYPEWRITER & CREDENTIALS ===== -->
@@ -36,11 +36,11 @@
 
 <div align="center">
   <a href="https://sachinxcoder-chi.vercel.app/"><code>🌐 Portfolio</code></a> &nbsp;•&nbsp;
-  <a href="#-featured-deployments--flagship-projects"><code>🚀 Projects</code></a> &nbsp;•&nbsp;
-  <a href="#-google-leadership--community-impact"><code>🎓 Leadership</code></a> &nbsp;•&nbsp;
-  <a href="#️-architecture--technology-stack"><code>🛠️ Tech Stack</code></a> &nbsp;•&nbsp;
-  <a href="#-continuous-shipping-consistency--telemetry"><code>📈 Telemetry</code></a> &nbsp;•&nbsp;
-  <a href="#-lets-build-something-exceptional"><code>🤝 Contact</code></a>
+  <a href="#projects"><code>🚀 Projects</code></a> &nbsp;•&nbsp;
+  <a href="#leadership"><code>🎓 Leadership</code></a> &nbsp;•&nbsp;
+  <a href="#tech-stack"><code>🛠️ Tech Stack</code></a> &nbsp;•&nbsp;
+  <a href="#telemetry"><code>📈 Telemetry</code></a> &nbsp;•&nbsp;
+  <a href="#contact"><code>🤝 Contact</code></a>
 </div>
 
 <br/>
@@ -77,6 +77,8 @@ Building scalable, production-grade applications with real-time AI and fluid int
 <br/>
 
 <!-- ===== 4. FEATURED DEPLOYMENTS & FLAGSHIP PROJECTS ===== -->
+<a id="projects"></a>
+
 ## 🚀 Featured Deployments & Flagship Projects
 
 <table>
@@ -163,6 +165,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
         <a href="https://github.com/Sachinxcode-01/digitalgrievanceredressalsystem">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="Digital Grievance Repo" />
         </a>
+        &nbsp;
+        <a href="https://github.com/Sachinxcode-01/digitalgrievanceredressalsystem#system-architecture">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="Digital Grievance Architecture Deep Dive" />
+        </a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -175,10 +181,25 @@ Building scalable, production-grade applications with real-time AI and fluid int
         <a href="https://github.com/Sachinxcode-01/MediConnect">
           <img src="https://img.shields.io/badge/💻_Repository-GitHub-0A101F?style=flat-square&logo=github&logoColor=FFFFFF" alt="MediConnect Repo" />
         </a>
+        &nbsp;
+        <a href="https://github.com/Sachinxcode-01/MediConnect#system-architecture">
+          <img src="https://img.shields.io/badge/📐_Architecture-Deep_Dive-0A101F?style=flat-square&logo=diagramsdotnet&logoColor=A78BFA" alt="MediConnect Architecture Deep Dive" />
+        </a>
       </p>
     </td>
   </tr>
 </table>
+
+<br/>
+
+<!-- ===== DYNAMIC PROJECTS ECOSYSTEM PANEL ===== -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects-light.svg" />
+    <img width="100%" alt="Sachin's Dynamic Projects Telemetry" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
+  </picture>
+</div>
 
 <br/>
 
@@ -224,6 +245,8 @@ Building scalable, production-grade applications with real-time AI and fluid int
 <br/>
 
 <!-- ===== 9. GOOGLE LEADERSHIP & COMMUNITY IMPACT ===== -->
+<a id="leadership"></a>
+
 ### 🎓 Google Leadership & Community Impact
 
 <table>
@@ -257,20 +280,169 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== 10. TECH STACK GROUPED BY ARCHITECTURAL LAYER ===== -->
-### 🛠️ Architecture & Technology Stack
+<!-- ===== 10. TECH STACK & ENGINEERING ARSENAL (20+ REPOSITORIES) ===== -->
+<a id="tech-stack"></a>
 
-| Layer | Technologies & Ecosystem |
-| :--- | :--- |
-| **Product UI & 3D Web** | ![Next.js](https://img.shields.io/badge/Next.js-0A101F?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF&labelColor=0A101F) ![React](https://img.shields.io/badge/React-0A101F?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0A101F) ![TypeScript](https://img.shields.io/badge/TypeScript-0A101F?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=0A101F) ![Three.js](https://img.shields.io/badge/Three.js-0A101F?style=for-the-badge&logo=threedotjs&logoColor=FFFFFF&labelColor=0A101F) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0A101F?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=0A101F) |
-| **Backend & Microservices** | ![FastAPI](https://img.shields.io/badge/FastAPI-0A101F?style=for-the-badge&logo=fastapi&logoColor=009688&labelColor=0A101F) ![Node.js](https://img.shields.io/badge/Node.js-0A101F?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E&labelColor=0A101F) ![Python](https://img.shields.io/badge/Python-0A101F?style=for-the-badge&logo=python&logoColor=22D3EE&labelColor=0A101F) ![C++](https://img.shields.io/badge/C++-0A101F?style=for-the-badge&logo=cplusplus&logoColor=00599C&labelColor=0A101F) |
-| **Mobile & Cross-Platform** | ![Flutter](https://img.shields.io/badge/Flutter-0A101F?style=for-the-badge&logo=flutter&logoColor=02569B&labelColor=0A101F) ![Dart](https://img.shields.io/badge/Dart-0A101F?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=0A101F) ![Android Studio](https://img.shields.io/badge/Android_Studio-0A101F?style=for-the-badge&logo=androidstudio&logoColor=3DDC84&labelColor=0A101F) |
-| **AI & Real-Time Pipelines** | ![LiveKit](https://img.shields.io/badge/LiveKit_RTC-0A101F?style=for-the-badge&logo=livekit&logoColor=22D3EE&labelColor=0A101F) ![Groq LLM](https://img.shields.io/badge/Groq_API-0A101F?style=for-the-badge&logo=huggingface&logoColor=A78BFA&labelColor=0A101F) ![ArcFace](https://img.shields.io/badge/Biometrics_AI-0A101F?style=for-the-badge&logo=opencv&logoColor=10B981&labelColor=0A101F) |
-| **Infrastructure & Cloud** | ![Git](https://img.shields.io/badge/Git-0A101F?style=for-the-badge&logo=git&logoColor=F05032&labelColor=0A101F) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0A101F?style=for-the-badge&logo=githubactions&logoColor=2088FF&labelColor=0A101F) ![Vercel](https://img.shields.io/badge/Vercel-0A101F?style=for-the-badge&logo=vercel&logoColor=FFFFFF&labelColor=0A101F) ![Firebase](https://img.shields.io/badge/Firebase-0A101F?style=for-the-badge&logo=firebase&logoColor=DD2C00&labelColor=0A101F) |
+## 🛠️ Complete Tech Stack & Engineering Arsenal
+> *The battle-tested technologies, platforms, and frameworks powering **20+ public and private repositories** — ranging from real-time biometric systems and interactive 3D web platforms to cross-platform mobile apps and cloud microservices.*
+
+<br/>
+
+<table>
+  <thead>
+    <tr>
+      <th width="28%" align="left">Architectural Domain</th>
+      <th width="72%" align="left">Technologies, Frameworks & Platforms (Individual Tooling)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="middle">
+        <b>💻 Core Languages</b><br/>
+        <sub>System, Scripting & Compiled</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-0A101F?style=for-the-badge&logo=python&logoColor=3776AB&labelColor=0A101F" alt="Python" /></a>
+        <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-0A101F?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=0A101F" alt="Dart" /></a>
+        <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-0A101F?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=0A101F" alt="TypeScript" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-0A101F?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=0A101F" alt="JavaScript" /></a>
+        <a href="https://en.cppreference.com/w/c"><img src="https://img.shields.io/badge/C-0A101F?style=for-the-badge&logo=c&logoColor=A8B9CC&labelColor=0A101F" alt="C" /></a>
+        <a href="https://isocpp.org/"><img src="https://img.shields.io/badge/C++-0A101F?style=for-the-badge&logo=cplusplus&logoColor=00599C&labelColor=0A101F" alt="C++" /></a>
+        <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-0A101F?style=for-the-badge&logo=kotlin&logoColor=7F52FF&labelColor=0A101F" alt="Kotlin" /></a>
+        <a href="https://en.wikipedia.org/wiki/SQL"><img src="https://img.shields.io/badge/SQL-0A101F?style=for-the-badge&logo=postgresql&logoColor=4169E1&labelColor=0A101F" alt="SQL" /></a>
+        <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Bash_Shell-0A101F?style=for-the-badge&logo=gnubash&logoColor=4EAA25&labelColor=0A101F" alt="Bash" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-0A101F?style=for-the-badge&logo=html5&logoColor=E34F26&labelColor=0A101F" alt="HTML5" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-0A101F?style=for-the-badge&logo=css3&logoColor=1572B6&labelColor=0A101F" alt="CSS3" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>⚛️ Frontend & 3D Web</b><br/>
+        <sub>Interactive UI, Shaders & Canvas</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-0A101F?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF&labelColor=0A101F" alt="Next.js" /></a>
+        <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-0A101F?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0A101F" alt="React" /></a>
+        <a href="https://threejs.org/"><img src="https://img.shields.io/badge/Three.js-0A101F?style=for-the-badge&logo=threedotjs&logoColor=FFFFFF&labelColor=0A101F" alt="Three.js" /></a>
+        <a href="https://docs.pmnd.rs/react-three-fiber"><img src="https://img.shields.io/badge/React_Three_Fiber-0A101F?style=for-the-badge&logo=threedotjs&logoColor=22D3EE&labelColor=0A101F" alt="React Three Fiber" /></a>
+        <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-0A101F?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=0A101F" alt="Tailwind CSS" /></a>
+        <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-0A101F?style=for-the-badge&logo=vite&logoColor=646CFF&labelColor=0A101F" alt="Vite" /></a>
+        <a href="https://redux-toolkit.js.org/"><img src="https://img.shields.io/badge/Redux_Toolkit-0A101F?style=for-the-badge&logo=redux&logoColor=764ABC&labelColor=0A101F" alt="Redux" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>📱 Mobile & Cross-Platform</b><br/>
+        <sub>Native & Hybrid Client Apps</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-0A101F?style=for-the-badge&logo=flutter&logoColor=02569B&labelColor=0A101F" alt="Flutter" /></a>
+        <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-0A101F?style=for-the-badge&logo=dart&logoColor=0175C2&labelColor=0A101F" alt="Dart" /></a>
+        <a href="https://developer.android.com/studio"><img src="https://img.shields.io/badge/Android_Studio-0A101F?style=for-the-badge&logo=androidstudio&logoColor=3DDC84&labelColor=0A101F" alt="Android Studio" /></a>
+        <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/Android_SDK-0A101F?style=for-the-badge&logo=android&logoColor=3DDC84&labelColor=0A101F" alt="Android SDK" /></a>
+        <a href="https://pub.dev/"><img src="https://img.shields.io/badge/Pub.dev-0A101F?style=for-the-badge&logo=dart&logoColor=22D3EE&labelColor=0A101F" alt="Pub.dev" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>⚡ Backend & Microservices</b><br/>
+        <sub>High-Throughput APIs & Services</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-0A101F?style=for-the-badge&logo=fastapi&logoColor=009688&labelColor=0A101F" alt="FastAPI" /></a>
+        <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-0A101F?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E&labelColor=0A101F" alt="Node.js" /></a>
+        <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express.js-0A101F?style=for-the-badge&logo=express&logoColor=FFFFFF&labelColor=0A101F" alt="Express.js" /></a>
+        <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Fastify-0A101F?style=for-the-badge&logo=fastify&logoColor=FFFFFF&labelColor=0A101F" alt="Fastify" /></a>
+        <a href="https://restfulapi.net/"><img src="https://img.shields.io/badge/REST_APIs-0A101F?style=for-the-badge&logo=postman&logoColor=FF6C37&labelColor=0A101F" alt="REST APIs" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"><img src="https://img.shields.io/badge/WebSockets-0A101F?style=for-the-badge&logo=socketdotio&logoColor=FFFFFF&labelColor=0A101F" alt="WebSockets" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>🤖 Applied AI, Vision & Voice</b><br/>
+        <sub>Biometrics, LLMs & Low-Latency RTC</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://github.com/deepinsight/insightface"><img src="https://img.shields.io/badge/ArcFace_Biometrics-0A101F?style=for-the-badge&logo=opencv&logoColor=10B981&labelColor=0A101F" alt="ArcFace Biometrics" /></a>
+        <a href="https://opencv.org/"><img src="https://img.shields.io/badge/OpenCV_Vision-0A101F?style=for-the-badge&logo=opencv&logoColor=5C3EE8&labelColor=0A101F" alt="OpenCV" /></a>
+        <a href="https://livekit.io/"><img src="https://img.shields.io/badge/LiveKit_WebRTC-0A101F?style=for-the-badge&logo=livekit&logoColor=22D3EE&labelColor=0A101F" alt="LiveKit RTC" /></a>
+        <a href="https://groq.com/"><img src="https://img.shields.io/badge/Groq_LPU_Inference-0A101F?style=for-the-badge&logo=speedtest&logoColor=F55036&labelColor=0A101F" alt="Groq Inference" /></a>
+        <a href="https://huggingface.co/"><img src="https://img.shields.io/badge/Hugging_Face-0A101F?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=0A101F" alt="Hugging Face" /></a>
+        <a href="https://openai.com/research/whisper"><img src="https://img.shields.io/badge/Speech_AI_STT/TTS-0A101F?style=for-the-badge&logo=soundcharts&logoColor=A78BFA&labelColor=0A101F" alt="Speech AI" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>🗄️ Databases & Storage</b><br/>
+        <sub>Relational, Document & Cache Layers</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-0A101F?style=for-the-badge&logo=mongodb&logoColor=47A248&labelColor=0A101F" alt="MongoDB" /></a>
+        <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-0A101F?style=for-the-badge&logo=postgresql&logoColor=4169E1&labelColor=0A101F" alt="PostgreSQL" /></a>
+        <a href="https://redis.io/"><img src="https://img.shields.io/badge/Redis_Cache-0A101F?style=for-the-badge&logo=redis&logoColor=DC382D&labelColor=0A101F" alt="Redis" /></a>
+        <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firestore_NoSQL-0A101F?style=for-the-badge&logo=firebase&logoColor=FFCA28&labelColor=0A101F" alt="Firebase Firestore" /></a>
+        <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/SQLite-0A101F?style=for-the-badge&logo=sqlite&logoColor=003B57&labelColor=0A101F" alt="SQLite" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>☁️ Cloud, DevOps & CI/CD</b><br/>
+        <sub>Containerization & Edge Deployment</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://cloud.google.com/"><img src="https://img.shields.io/badge/Google_Cloud-0A101F?style=for-the-badge&logo=googlecloud&logoColor=4285F4&labelColor=0A101F" alt="Google Cloud" /></a>
+        <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-0A101F?style=for-the-badge&logo=docker&logoColor=2496ED&labelColor=0A101F" alt="Docker" /></a>
+        <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-0A101F?style=for-the-badge&logo=githubactions&logoColor=2088FF&labelColor=0A101F" alt="GitHub Actions" /></a>
+        <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel_Edge-0A101F?style=for-the-badge&logo=vercel&logoColor=FFFFFF&labelColor=0A101F" alt="Vercel" /></a>
+        <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase_Platform-0A101F?style=for-the-badge&logo=firebase&logoColor=DD2C00&labelColor=0A101F" alt="Firebase" /></a>
+        <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git_VCS-0A101F?style=for-the-badge&logo=git&logoColor=F05032&labelColor=0A101F" alt="Git" /></a>
+        <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Linux_Ubuntu-0A101F?style=for-the-badge&logo=linux&logoColor=FCC624&labelColor=0A101F" alt="Linux" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <b>🛠️ Tooling & Architecture</b><br/>
+        <sub>Developer Ecosystem & Testing</sub>
+      </td>
+      <td valign="middle">
+        <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/VS_Code-0A101F?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC&labelColor=0A101F" alt="VS Code" /></a>
+        <a href="https://www.postman.com/"><img src="https://img.shields.io/badge/Postman-0A101F?style=for-the-badge&logo=postman&logoColor=FF6C37&labelColor=0A101F" alt="Postman" /></a>
+        <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-0A101F?style=for-the-badge&logo=figma&logoColor=F24E1E&labelColor=0A101F" alt="Figma" /></a>
+        <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub_Ecosystem-0A101F?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0A101F" alt="GitHub" /></a>
+        <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/NPM_Registry-0A101F?style=for-the-badge&logo=npm&logoColor=CB3837&labelColor=0A101F" alt="NPM" /></a>
+        <a href="https://pypi.org/"><img src="https://img.shields.io/badge/PyPI-0A101F?style=for-the-badge&logo=pypi&logoColor=3775A9&labelColor=0A101F" alt="PyPI" /></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+<details>
+<summary><b>🔍 Click to view Technology-to-Repository Mapping (Across 20+ Repos)</b></summary>
+<br/>
+
+| Repository | Scope | Core Technologies & Platforms Leveraged |
+| :--- | :---: | :--- |
+| **SmartFace Attendance** | `Enterprise Private` | `Dart` • `Flutter` • `FastAPI` • `Python` • `ArcFace AI` • `MongoDB` • `OpenCV` • `Vercel` |
+| **Aurevia Premium Rentals** | `Public` | `Next.js 14` • `TypeScript` • `React Three Fiber` • `Three.js` • `Tailwind CSS` • `Vercel` |
+| **Nexa Voice Assistant** | `Public` | `Python` • `LiveKit WebRTC` • `Groq API (LPU)` • `Speech AI (Whisper)` • `System Automation` |
+| **KrishiAI Agritech** | `Public` | `Python` • `FastAPI` • `OpenCV` • `Computer Vision` • `JavaScript` • `Vercel` |
+| **NammaBus AI** | `Public / Active` | `TypeScript` • `Node.js` • `Fastify` • `Docker` • `Redis` • `Transit Intelligence` |
+| **MediConnect Health** | `Public` | `React` • `Node.js` • `Express.js` • `MongoDB` • `JavaScript` • `Healthcare AI` • `Vercel` |
+| **Digital Grievance System** | `Public` | `Node.js` • `Express.js` • `MongoDB` • `JavaScript` • `HTML5` • `CSS3` • `Tailwind CSS` |
+| **Daily-Basket & Kirana-OS** | `Public` | `Flutter` • `Dart` • `Android Studio` • `Mobile Architecture` • `Provider/Bloc` |
+| **Kedar Enterprises Automation** | `Public` | `TypeScript` • `Node.js` • `REST APIs` • `Automation Workflow` |
+| **DSA in C & Python DSA** | `Public` | `C` • `Python` • `Memory Management` • `Algorithms & Data Structures` |
+| **REC Hackathon & Portfolios** | `Public` | `Next.js` • `TypeScript` • `HTML5` • `CSS3` • `JavaScript` • `Vercel Edge` |
+
+</details>
 
 <br/>
 
 <!-- ===== 11. ENGINEERING CONSISTENCY & TELEMETRY ===== -->
+<a id="telemetry"></a>
+
 ## 📈 Continuous Shipping, Consistency & Telemetry
 
 ```bash
@@ -365,6 +537,8 @@ $ git telemetry --analytics --rhythm
 <br/>
 
 <!-- ===== 12. LET'S BUILD TOGETHER CTA ===== -->
+<a id="contact"></a>
+
 ### 🤝 Let's Build Something Exceptional
 
 I am actively open to collaborating on:
