@@ -192,16 +192,6 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 <br/>
 
-<!-- ===== DYNAMIC PROJECTS ECOSYSTEM PANEL ===== -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects-light.svg" />
-    <img width="100%" alt="Sachin's Dynamic Projects Telemetry" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/projects/projects.svg" />
-  </picture>
-</div>
-
-<br/>
 
 <!-- ===== 5. CURRENT FOCUS ===== -->
 ### 🔭 Current Focus & Active Research

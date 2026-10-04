@@ -42,9 +42,8 @@ jobs:
           print('✓ All referenced logos verified successfully')
           "
 
-      - name: Test Project Panel SVG Generation
+      - name: Validate Profile Hero Assets
         run: |
-          python3 .github/scripts/generate_projects.py projects.json .
-          test -f projects.svg
-          test -f projects-light.svg
-          echo "✓ Generated projects.svg and projects-light.svg successfully"
+          test -f dark.svg
+          test -f light.svg
+          echo "✓ Profile dark.svg and light.svg assets verified successfully"
