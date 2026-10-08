@@ -1,9 +1,13 @@
 import os
 import sys
+import re
 import numpy as np
 from PIL import Image, ImageOps, ImageEnhance, ImageFilter, ImageDraw
 from scipy import ndimage
 from scipy.optimize import linear_sum_assignment
+import matplotlib.path as mpath
+import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
 
 def get_segmented_mask(rgb_arr, threshold=35.0):
     top_corners = np.concatenate([
@@ -86,66 +90,259 @@ def runs_to_svg_path(runs):
     cmds = [f"M{x} {y}h{length}v1h-{length}z" for (x, y, length) in runs]
     return "".join(cmds)
 
-# 3 Logos generators
+GITHUB_PATH_D = (
+    "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385"
+    ".6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61"
+    "C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236"
+    " 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332"
+    "-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23"
+    ".96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23"
+    ".645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92"
+    ".42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57"
+    "C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+)
+
+PYTHON_PATH_D = (
+    "M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63"
+    "-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05"
+    "-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17"
+    "l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05"
+    "-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16"
+    "l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15"
+    ".58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09"
+    ".41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12"
+    ".35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71"
+    "-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36"
+    "-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01"
+    "-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2"
+    ".01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02"
+    ".13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21"
+    "V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33"
+    ".08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"
+)
+
+def parse_svg_path(d):
+    tokens = re.findall(r'([A-Za-z]|[-+]?(?:\d*\.\d+|\d+)(?:[eE][-+]?\d+)?)', d)
+    vertices = []
+    codes = []
+    i = 0
+    cur_x, cur_y = 0.0, 0.0
+    start_x, start_y = 0.0, 0.0
+    last_cmd = ''
+
+    while i < len(tokens):
+        t = tokens[i]
+        if t.isalpha():
+            cmd = t
+            i += 1
+        else:
+            if last_cmd in 'Mm':
+                cmd = 'L' if last_cmd == 'M' else 'l'
+            else:
+                cmd = last_cmd
+
+        last_cmd = cmd
+
+        if cmd == 'M':
+            cur_x, cur_y = float(tokens[i]), float(tokens[i+1])
+            start_x, start_y = cur_x, cur_y
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.MOVETO)
+            i += 2
+        elif cmd == 'm':
+            cur_x += float(tokens[i])
+            cur_y += float(tokens[i+1])
+            start_x, start_y = cur_x, cur_y
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.MOVETO)
+            i += 2
+        elif cmd == 'L':
+            cur_x, cur_y = float(tokens[i]), float(tokens[i+1])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 2
+        elif cmd == 'l':
+            cur_x += float(tokens[i])
+            cur_y += float(tokens[i+1])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 2
+        elif cmd == 'H':
+            cur_x = float(tokens[i])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 1
+        elif cmd == 'h':
+            cur_x += float(tokens[i])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 1
+        elif cmd == 'V':
+            cur_y = float(tokens[i])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 1
+        elif cmd == 'v':
+            cur_y += float(tokens[i])
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.LINETO)
+            i += 1
+        elif cmd == 'C':
+            x1, y1 = float(tokens[i]), float(tokens[i+1])
+            x2, y2 = float(tokens[i+2]), float(tokens[i+3])
+            cur_x, cur_y = float(tokens[i+4]), float(tokens[i+5])
+            vertices.extend([(x1, y1), (x2, y2), (cur_x, cur_y)])
+            codes.extend([mpath.Path.CURVE4, mpath.Path.CURVE4, mpath.Path.CURVE4])
+            i += 6
+        elif cmd == 'c':
+            x1 = cur_x + float(tokens[i])
+            y1 = cur_y + float(tokens[i+1])
+            x2 = cur_x + float(tokens[i+2])
+            y2 = cur_y + float(tokens[i+3])
+            cur_x += float(tokens[i+4])
+            cur_y += float(tokens[i+5])
+            vertices.extend([(x1, y1), (x2, y2), (cur_x, cur_y)])
+            codes.extend([mpath.Path.CURVE4, mpath.Path.CURVE4, mpath.Path.CURVE4])
+            i += 6
+        elif cmd in 'Zz':
+            cur_x, cur_y = start_x, start_y
+            vertices.append((cur_x, cur_y))
+            codes.append(mpath.Path.CLOSEPOLY)
+        else:
+            i += 1
+
+    return mpath.Path(vertices, codes)
+
+def sample_mask_points(mask, n_pts=900, edge_ratio=0.36, seed=42):
+    np.random.seed(seed)
+    struct = ndimage.generate_binary_structure(2, 1)
+    eroded = ndimage.binary_erosion(mask, structure=struct, iterations=1)
+    edge_mask = mask & (~eroded)
+    interior_mask = eroded
+
+    edge_ys, edge_xs = np.where(edge_mask)
+    int_ys, int_xs = np.where(interior_mask)
+
+    n_edge = int(n_pts * edge_ratio)
+    n_int = n_pts - n_edge
+
+    if len(edge_xs) > n_edge:
+        edge_idx = np.linspace(0, len(edge_xs) - 1, n_edge, endpoint=False).astype(int)
+        edge_pts = np.column_stack([edge_xs[edge_idx], edge_ys[edge_idx]])
+    else:
+        edge_pts = np.column_stack([edge_xs, edge_ys])
+        n_int = n_pts - len(edge_pts)
+
+    ymin, ymax = int_ys.min(), int_ys.max()
+    xmin, xmax = int_xs.min(), int_xs.max()
+
+    area_per_pt = np.sum(interior_mask) / float(n_int)
+    cell_size = np.sqrt(area_per_pt)
+
+    grid_x = np.arange(xmin, xmax, cell_size)
+    grid_y = np.arange(ymin, ymax, cell_size)
+    gx, gy = np.meshgrid(grid_x, grid_y)
+    gx = gx.ravel() + np.random.uniform(-cell_size * 0.35, cell_size * 0.35, gx.size)
+    gy = gy.ravel() + np.random.uniform(-cell_size * 0.35, cell_size * 0.35, gy.size)
+
+    int_pts_list = []
+    for x, y in zip(gx, gy):
+        ix, iy = int(round(x)), int(round(y))
+        if 0 <= iy < mask.shape[0] and 0 <= ix < mask.shape[1] and interior_mask[iy, ix]:
+            int_pts_list.append([x, y])
+
+    int_pts = np.array(int_pts_list, dtype=np.float32)
+    if len(int_pts) >= n_int:
+        perm = np.random.permutation(len(int_pts))
+        int_pts = int_pts[perm[:n_int]]
+    else:
+        shortage = n_int - len(int_pts)
+        unused_idx = np.random.choice(len(int_xs), shortage, replace=False)
+        supp = np.column_stack([int_xs[unused_idx], int_ys[unused_idx]]).astype(np.float32)
+        int_pts = np.vstack([int_pts, supp]) if len(int_pts) > 0 else supp
+
+    pts = np.vstack([edge_pts.astype(np.float32), int_pts])
+    return pts
+
+# 3 Logos generators (Authentic Official Geometry & Perfect Sampling)
 def generate_python_points(size=(300, 340), n_pts=900):
-    im = Image.new('L', size, 0)
-    draw = ImageDraw.Draw(im)
-    cx, cy = size[0] // 2, size[1] // 2
-    r = 82
+    fig, ax = plt.subplots(figsize=(size[0] / 100.0, size[1] / 100.0), dpi=100)
+    fig.patch.set_facecolor('black')
+    ax.set_facecolor('black')
 
-    # Top snake
-    draw.rounded_rectangle([cx - r, cy - r, cx + 18, cy + 20], radius=32, fill=255)
-    draw.rounded_rectangle([cx - 20, cy - r, cx + r, cy - 20], radius=32, fill=255)
-    draw.rectangle([cx - 20, cy - 20, cx + 18, cy], fill=255)
-    draw.rounded_rectangle([cx + 10, cy - 14, cx + r - 12, cy + 14], radius=18, fill=0)
-    draw.ellipse([cx - 45, cy - 65, cx - 30, cy - 50], fill=0)
+    path = parse_svg_path(PYTHON_PATH_D)
+    scale = 0.64
+    pixel_scale = (size[0] * scale) / 24.0
+    cx = size[0] / 2.0
+    cy = size[1] / 2.0
 
-    # Bottom snake
-    draw.rounded_rectangle([cx - 18, cy - 20, cx + r, cy + r], radius=32, fill=255)
-    draw.rounded_rectangle([cx - r, cy + 20, cx + 20, cy + r], radius=32, fill=255)
-    draw.rectangle([cx - 18, cy, cx + 20, cy + 20], fill=255)
-    draw.rounded_rectangle([cx - r + 12, cy - 14, cx - 10, cy + 14], radius=18, fill=0)
-    draw.ellipse([cx + 30, cy + 50, cx + 45, cy + 65], fill=0)
+    verts = path.vertices.copy()
+    verts[:, 0] = (verts[:, 0] - 12.0) * pixel_scale + cx
+    verts[:, 1] = (verts[:, 1] - 12.0) * pixel_scale + cy
 
-    arr = np.array(im)
-    ys, xs = np.where(arr > 128)
-    indices = np.linspace(0, len(xs) - 1, n_pts).astype(int)
-    return np.column_stack([xs[indices], ys[indices]])
+    transformed_path = type(path)(verts, path.codes)
+    patch = mpatches.PathPatch(transformed_path, facecolor='white', edgecolor='white', lw=0.6)
+    ax.add_patch(patch)
+
+    ax.set_xlim(0, size[0])
+    ax.set_ylim(size[1], 0)
+    ax.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig.canvas.draw()
+    rgba = np.asarray(fig.canvas.buffer_rgba())
+    plt.close(fig)
+
+    py_mask = rgba[:, :, 0] > 128
+    return sample_mask_points(py_mask, n_pts=n_pts, edge_ratio=0.38, seed=42)
 
 def generate_code_points(size=(300, 340), n_pts=900):
     im = Image.new('L', size, 0)
     draw = ImageDraw.Draw(im)
     cx, cy = size[0] // 2, size[1] // 2
 
-    # < bracket
-    draw.line([(cx - 42, cy), (cx - 96, cy - 58)], fill=255, width=19)
-    draw.line([(cx - 42, cy), (cx - 96, cy + 58)], fill=255, width=19)
+    # Proper < bracket (apex pointing left)
+    draw.line([(cx - 42, cy - 58), (cx - 96, cy)], fill=255, width=19)
+    draw.line([(cx - 96, cy), (cx - 42, cy + 58)], fill=255, width=19)
     # / slash
     draw.line([(cx - 18, cy + 72), (cx + 18, cy - 72)], fill=255, width=19)
-    # > bracket
-    draw.line([(cx + 42, cy), (cx + 96, cy - 58)], fill=255, width=19)
-    draw.line([(cx + 42, cy), (cx + 96, cy + 58)], fill=255, width=19)
+    # Proper > bracket (apex pointing right)
+    draw.line([(cx + 42, cy - 58), (cx + 96, cy)], fill=255, width=19)
+    draw.line([(cx + 96, cy), (cx + 42, cy + 58)], fill=255, width=19)
 
-    arr = np.array(im)
-    ys, xs = np.where(arr > 128)
-    indices = np.linspace(0, len(xs) - 1, n_pts).astype(int)
-    return np.column_stack([xs[indices], ys[indices]])
+    code_mask = np.array(im) > 128
+    return sample_mask_points(code_mask, n_pts=n_pts, edge_ratio=0.35, seed=42)
 
 def generate_github_points(size=(300, 340), n_pts=900):
-    im = Image.new('L', size, 0)
-    draw = ImageDraw.Draw(im)
-    cx, cy = size[0] // 2, size[1] // 2
+    path = parse_svg_path(GITHUB_PATH_D)
+    verts = path.vertices[6:70].copy()
+    codes = path.codes[6:70].copy()
+    codes[0] = mpath.Path.MOVETO
+    verts = np.vstack([verts, [verts[0]], [verts[0]]])
+    codes = np.append(codes, [mpath.Path.LINETO, mpath.Path.CLOSEPOLY])
 
-    # Octocat head silhouette
-    draw.ellipse([cx - 82, cy - 75, cx + 82, cy + 65], fill=255)
-    draw.polygon([(cx - 78, cy - 35), (cx - 65, cy - 98), (cx - 18, cy - 65)], fill=255)
-    draw.polygon([(cx + 78, cy - 35), (cx + 65, cy - 98), (cx + 20, cy - 65)], fill=255)
-    draw.ellipse([cx - 65, cy + 28, cx + 65, cy + 86], fill=255)
+    fig, ax = plt.subplots(figsize=(size[0] / 100.0, size[1] / 100.0), dpi=100)
+    fig.patch.set_facecolor('black')
+    ax.set_facecolor('black')
 
-    arr = np.array(im)
-    ys, xs = np.where(arr > 128)
-    indices = np.linspace(0, len(xs) - 1, n_pts).astype(int)
-    return np.column_stack([xs[indices], ys[indices]])
+    scale = 10.8
+    cx = size[0] / 2.0
+    cy = size[1] / 2.0
+    verts[:, 0] = (verts[:, 0] - 12.0) * scale + cx
+    verts[:, 1] = (verts[:, 1] - 14.7) * scale + cy
+
+    octo_path_scaled = mpath.Path(verts, codes)
+    patch = mpatches.PathPatch(octo_path_scaled, facecolor='white', edgecolor='white', lw=0.6)
+    ax.add_patch(patch)
+    ax.set_xlim(0, size[0])
+    ax.set_ylim(size[1], 0)
+    ax.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig.canvas.draw()
+    rgba = np.asarray(fig.canvas.buffer_rgba())
+    plt.close(fig)
+
+    gh_mask = rgba[:, :, 0] > 128
+    return sample_mask_points(gh_mask, n_pts=n_pts, edge_ratio=0.36, seed=42)
 
 def compute_optimal_transport(pts1, pts2):
     cost = np.linalg.norm(pts1[:, None, :] - pts2[None, :, :], axis=-1)
