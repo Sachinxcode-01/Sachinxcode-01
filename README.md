@@ -5,6 +5,10 @@
   <img width="100%" alt="Sachin K — Full-Stack, Mobile & AI Systems Engineer" src="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg">
 </picture>
 
+<p align="right">
+  <sub>🌓 Auto-adapts to GitHub theme &bull; <a href="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/light.svg" target="_blank">View Light Version</a> &bull; <a href="https://raw.githubusercontent.com/Sachinxcode-01/Sachinxcode-01/main/dark.svg" target="_blank">View Dark Version</a></sub>
+</p>
+
 <!-- ===== 2. TYPEWRITER & CREDENTIALS ===== -->
 <div align="center">
   <a href="https://github.com/Sachinxcode-01">

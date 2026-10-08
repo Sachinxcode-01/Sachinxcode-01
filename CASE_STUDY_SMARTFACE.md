@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🎯 SmartFace Attendance System
-### Enterprise Biometric Security & Real-Time Facial Recognition Platform
+<img width="100%" src="./logos/smartface_banner.svg" alt="SmartFace Attendance System — Enterprise Biometric Security" />
+
+<br/><br/>
 
 [![CI Pipeline](https://img.shields.io/badge/CI-Passing-0A101F?style=for-the-badge&logo=githubactions&logoColor=22D3EE&labelColor=0A101F)](https://github.com/Sachinxcode-01/AI-Face-Attendance-System)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -15,6 +16,7 @@
 [🌐 **Live Web App**](https://smartattendancesystem-nu.vercel.app) &nbsp;•&nbsp; [📑 **API Docs (Swagger)**](https://smartattendancesystem-nu.vercel.app/docs) &nbsp;•&nbsp; [🐛 **Report Bug**](https://github.com/Sachinxcode-01/AI-Face-Attendance-System/issues)
 
 </div>
+
 
 ---
 
