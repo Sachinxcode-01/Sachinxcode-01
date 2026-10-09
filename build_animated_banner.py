@@ -296,35 +296,32 @@ def generate_python_points(size=(300, 340), n_pts=900):
     return sample_mask_points(py_mask, n_pts=n_pts, edge_ratio=0.38, seed=42)
 
 def generate_dart_points(size=(300, 340), n_pts=900):
-    im = Image.new('L', size, 0)
-    draw = ImageDraw.Draw(im)
-    cx, cy = size[0] // 2, size[1] // 2
-
-    # Scale from 128x128 viewBox to ~190px size
-    scale = 1.72
-    ox = cx - int(66 * scale)
-    oy = cy - int(68 * scale)
-
-    def pt(x, y):
-        return (int(round(ox + x * scale)), int(round(oy + y * scale)))
-
-    poly1 = [pt(62.6, 15.6), pt(20.2, 58.0), pt(37.2, 75.0), pt(93.8, 18.4), pt(68.8, 15.6)]
-    poly2 = [pt(62.6, 15.6), pt(37.2, 75.0), pt(54.6, 92.4), pt(93.8, 53.2), pt(93.8, 26.8)]
-    poly3 = [pt(93.8, 53.2), pt(54.6, 92.4), pt(71.6, 109.4), pt(111.2, 69.8), pt(111.2, 53.2)]
-    poly4 = [pt(71.6, 109.4), pt(87.2, 125.0), pt(119.4, 92.8), pt(119.4, 76.2)]
-
-    draw.polygon(poly1, fill=255)
-    draw.polygon(poly2, fill=255)
-    draw.polygon(poly3, fill=255)
-    draw.polygon(poly4, fill=255)
-
-    # 3px facet separation lines so facets are crisp in dots
-    draw.line([pt(62.6, 15.6), pt(37.2, 75.0)], fill=0, width=3)
-    draw.line([pt(93.8, 53.2), pt(54.6, 92.4)], fill=0, width=3)
-    draw.line([pt(71.6, 109.4), pt(111.2, 69.8)], fill=0, width=3)
-
-    dart_mask = np.array(im) > 128
-    return sample_mask_points(dart_mask, n_pts=n_pts, edge_ratio=0.36, seed=42)
+    dart_img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logos", "dart.png")
+    if os.path.exists(dart_img_path):
+        im = Image.open(dart_img_path).convert('L')
+        dart_mask = np.array(im) > 128
+    else:
+        im = Image.new('L', size, 0)
+        draw = ImageDraw.Draw(im)
+        cx, cy = size[0] // 2, size[1] // 2
+        scale = 1.72
+        ox = cx - int(66 * scale)
+        oy = cy - int(68 * scale)
+        def pt(x, y):
+            return (int(round(ox + x * scale)), int(round(oy + y * scale)))
+        poly1 = [pt(62.6, 15.6), pt(20.2, 58.0), pt(37.2, 75.0), pt(93.8, 18.4), pt(68.8, 15.6)]
+        poly2 = [pt(62.6, 15.6), pt(37.2, 75.0), pt(54.6, 92.4), pt(93.8, 53.2), pt(93.8, 26.8)]
+        poly3 = [pt(93.8, 53.2), pt(54.6, 92.4), pt(71.6, 109.4), pt(111.2, 69.8), pt(111.2, 53.2)]
+        poly4 = [pt(71.6, 109.4), pt(87.2, 125.0), pt(119.4, 92.8), pt(119.4, 76.2)]
+        draw.polygon(poly1, fill=255)
+        draw.polygon(poly2, fill=255)
+        draw.polygon(poly3, fill=255)
+        draw.polygon(poly4, fill=255)
+        draw.line([pt(62.6, 15.6), pt(37.2, 75.0)], fill=0, width=4)
+        draw.line([pt(93.8, 53.2), pt(54.6, 92.4)], fill=0, width=4)
+        draw.line([pt(71.6, 109.4), pt(111.2, 69.8)], fill=0, width=4)
+        dart_mask = np.array(im) > 128
+    return sample_mask_points(dart_mask, n_pts=n_pts, edge_ratio=0.40, seed=42)
 
 def generate_typescript_points(size=(300, 340), n_pts=900):
     im = Image.new('L', size, 0)
