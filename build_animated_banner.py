@@ -295,22 +295,67 @@ def generate_python_points(size=(300, 340), n_pts=900):
     py_mask = rgba[:, :, 0] > 128
     return sample_mask_points(py_mask, n_pts=n_pts, edge_ratio=0.38, seed=42)
 
-def generate_code_points(size=(300, 340), n_pts=900):
+def generate_dart_points(size=(300, 340), n_pts=900):
     im = Image.new('L', size, 0)
     draw = ImageDraw.Draw(im)
     cx, cy = size[0] // 2, size[1] // 2
 
-    # Proper < bracket (apex pointing left)
-    draw.line([(cx - 42, cy - 58), (cx - 96, cy)], fill=255, width=19)
-    draw.line([(cx - 96, cy), (cx - 42, cy + 58)], fill=255, width=19)
-    # / slash
-    draw.line([(cx - 18, cy + 72), (cx + 18, cy - 72)], fill=255, width=19)
-    # Proper > bracket (apex pointing right)
-    draw.line([(cx + 42, cy - 58), (cx + 96, cy)], fill=255, width=19)
-    draw.line([(cx + 96, cy), (cx + 42, cy + 58)], fill=255, width=19)
+    # Scale from 128x128 viewBox to ~190px size
+    scale = 1.72
+    ox = cx - int(66 * scale)
+    oy = cy - int(68 * scale)
 
-    code_mask = np.array(im) > 128
-    return sample_mask_points(code_mask, n_pts=n_pts, edge_ratio=0.35, seed=42)
+    def pt(x, y):
+        return (int(round(ox + x * scale)), int(round(oy + y * scale)))
+
+    poly1 = [pt(62.6, 15.6), pt(20.2, 58.0), pt(37.2, 75.0), pt(93.8, 18.4), pt(68.8, 15.6)]
+    poly2 = [pt(62.6, 15.6), pt(37.2, 75.0), pt(54.6, 92.4), pt(93.8, 53.2), pt(93.8, 26.8)]
+    poly3 = [pt(93.8, 53.2), pt(54.6, 92.4), pt(71.6, 109.4), pt(111.2, 69.8), pt(111.2, 53.2)]
+    poly4 = [pt(71.6, 109.4), pt(87.2, 125.0), pt(119.4, 92.8), pt(119.4, 76.2)]
+
+    draw.polygon(poly1, fill=255)
+    draw.polygon(poly2, fill=255)
+    draw.polygon(poly3, fill=255)
+    draw.polygon(poly4, fill=255)
+
+    # 3px facet separation lines so facets are crisp in dots
+    draw.line([pt(62.6, 15.6), pt(37.2, 75.0)], fill=0, width=3)
+    draw.line([pt(93.8, 53.2), pt(54.6, 92.4)], fill=0, width=3)
+    draw.line([pt(71.6, 109.4), pt(111.2, 69.8)], fill=0, width=3)
+
+    dart_mask = np.array(im) > 128
+    return sample_mask_points(dart_mask, n_pts=n_pts, edge_ratio=0.36, seed=42)
+
+def generate_typescript_points(size=(300, 340), n_pts=900):
+    im = Image.new('L', size, 0)
+    draw = ImageDraw.Draw(im)
+    cx, cy = size[0] // 2, size[1] // 2
+
+    # Outer rounded square badge
+    w, h = 184, 184
+    x0, y0 = cx - w // 2, cy - h // 2
+    draw.rounded_rectangle([x0, y0, x0 + w, y0 + h], radius=24, outline=255, width=15)
+
+    # 'T'
+    tx = cx - 56
+    ty = cy - 42
+    draw.rectangle([tx, ty, tx + 48, ty + 15], fill=255)
+    draw.rectangle([tx + 17, ty, tx + 31, ty + 78], fill=255)
+
+    # 'S'
+    sx = cx + 8
+    sy = ty
+    sw, sh = 46, 78
+    bw = 15
+    draw.rectangle([sx, sy, sx + sw, sy + bw], fill=255)
+    draw.rectangle([sx, sy + 32, sx + sw, sy + 32 + bw], fill=255)
+    draw.rectangle([sx, sy + sh - bw, sx + sw, sy + sh], fill=255)
+    draw.rectangle([sx, sy, sx + bw, sy + 36], fill=255)
+    draw.rectangle([sx + sw - bw, sy + 36, sx + sw, sy + sh], fill=255)
+
+    ts_mask = np.array(im) > 128
+    return sample_mask_points(ts_mask, n_pts=n_pts, edge_ratio=0.36, seed=42)
+
 
 def generate_github_points(size=(300, 340), n_pts=900):
     path = parse_svg_path(GITHUB_PATH_D)
@@ -474,15 +519,18 @@ def generate_banner(is_dark=True, photo_path='Sachinxcode-01.jpg'):
 
     # Traveller layer: 900 dots
     pts_py = generate_python_points(n_pts=900)
-    pts_code_raw = generate_code_points(n_pts=900)
+    pts_dart_raw = generate_dart_points(n_pts=900)
+    pts_ts_raw = generate_typescript_points(n_pts=900)
     pts_gh_raw = generate_github_points(n_pts=900)
 
-    # Match optimal transport
-    pts_code = compute_optimal_transport(pts_py, pts_code_raw)
-    pts_gh = compute_optimal_transport(pts_code, pts_gh_raw)
+    # Match optimal transport across 4-logo sequence: Python -> Dart -> TypeScript -> GitHub
+    pts_dart = compute_optimal_transport(pts_py, pts_dart_raw)
+    pts_ts = compute_optimal_transport(pts_dart, pts_ts_raw)
+    pts_gh = compute_optimal_transport(pts_ts, pts_gh_raw)
 
-    # Compact keyTimes
-    kt_str = "0;.211;.303;.444;.535;.676;.768;.908;1"
+    # Compact keyTimes for 17.5s loop (Portrait: 3.0s, 4 Logos: 2.0s each, Transitions: 1.3s)
+    # T = 17.5s: 0, 3.0/17.5, 4.3/17.5, 6.3/17.5, 7.6/17.5, 9.6/17.5, 10.9/17.5, 12.9/17.5, 14.2/17.5, 16.2/17.5, 1.0
+    kt_str = "0;.171;.246;.360;.434;.549;.623;.737;.811;.926;1"
 
     # Build SVG content
     svg_lines = []
@@ -551,23 +599,24 @@ def generate_banner(is_dark=True, photo_path='Sachinxcode-01.jpg'):
         drift = 0.42 * (logo_centroid - b_center)
         dx, dy = drift[0], drift[1]
 
-        trans_vals = f"0 0;0 0;{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};0 0;0 0"
-        op_vals = "1;1;0;0;0;0;0;1;1"
+        trans_vals = f"0 0;0 0;{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};0 0;0 0"
+        op_vals = "1;1;0;0;0;0;0;0;0;1;1"
 
-        svg_lines.append(f'        <g><animateTransform attributeName="transform" type="translate" values="{trans_vals}" keyTimes="{kt_str}" dur="14.2s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="{op_vals}" keyTimes="{kt_str}" dur="14.2s" begin="3.2s" repeatCount="indefinite"/><path d="{path_d}"/></g>')
+        svg_lines.append(f'        <g><animateTransform attributeName="transform" type="translate" values="{trans_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="{op_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><path d="{path_d}"/></g>')
     svg_lines.append(f'      </g>')
 
     # 3. TRAVELLER LAYER (900 dots)
     svg_lines.append(f'      <g id="traveller-layer" fill="{portrait_hue}">')
-    tr_op_vals = "0;0;1;1;1;1;1;0;0"
+    tr_op_vals = "0;0;1;1;1;1;1;1;1;0;0"
     for i in range(900):
         x1, y1 = pts_py[i]
-        x2, y2 = pts_code[i]
-        x3, y3 = pts_gh[i]
-        x_vals = f"{x1};{x1};{x1};{x1};{x2};{x2};{x3};{x3};{x1}"
-        y_vals = f"{y1};{y1};{y1};{y1};{y2};{y2};{y3};{y3};{y1}"
+        x2, y2 = pts_dart[i]
+        x3, y3 = pts_ts[i]
+        x4, y4 = pts_gh[i]
+        x_vals = f"{x1};{x1};{x1};{x1};{x2};{x2};{x3};{x3};{x4};{x4};{x1}"
+        y_vals = f"{y1};{y1};{y1};{y1};{y2};{y2};{y3};{y3};{y4};{y4};{y1}"
 
-        svg_lines.append(f'        <rect width="1.8" height="1.8" rx="0.3" x="{x1}" y="{y1}" opacity="0"><animate attributeName="x" values="{x_vals}" keyTimes="{kt_str}" dur="14.2s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="{y_vals}" keyTimes="{kt_str}" dur="14.2s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="{tr_op_vals}" keyTimes="{kt_str}" dur="14.2s" begin="3.2s" repeatCount="indefinite"/></rect>')
+        svg_lines.append(f'        <rect width="1.8" height="1.8" rx="0.3" x="{x1}" y="{y1}" opacity="0"><animate attributeName="x" values="{x_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="{y_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="{tr_op_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/></rect>')
     svg_lines.append(f'      </g>')
 
     svg_lines.append(f'    </g>')
@@ -647,8 +696,8 @@ def generate_banner(is_dark=True, photo_path='Sachinxcode-01.jpg'):
     print(f"Intro evenness metric: {intro_evenness:.4f} (target: ~0.05)")
     print(f"Drift bands: 94, Noise sigma: 4.0")
     print(f"Straight-boundary metric: {sb_metric:.4f} (target: ~0.01)")
-    print(f"Traveller dots: 900 (OT matched across Python, Code, GitHub)")
-    print(f"Loop animation duration: 14.2s (Portrait: 3.0s, Logos: 2.0s, Transitions: 1.3s)")
+    print(f"Traveller dots: 900 (OT matched across Python, Dart, TypeScript, GitHub)")
+    print(f"Loop animation duration: 17.5s (Portrait: 3.0s, 4 Logos: 2.0s each, Transitions: 1.3s)")
     print(f"File size: {file_size_kb:.1f} KB")
     print()
 
