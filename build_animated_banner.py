@@ -599,15 +599,15 @@ def generate_banner(is_dark=True, photo_path='Sachinxcode-01.jpg'):
         drift = 0.42 * (logo_centroid - b_center)
         dx, dy = drift[0], drift[1]
 
-        trans_vals = f"0 0;0 0;{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};0 0;0 0"
-        op_vals = "1;1;0;0;0;0;0;0;0;1;1"
+        trans_vals = f"0 0;0 0;{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};{dx:.1f} {dy:.1f};0 0"
+        op_vals = "1;1;0;0;0;0;0;0;0;0;1"
 
         svg_lines.append(f'        <g><animateTransform attributeName="transform" type="translate" values="{trans_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="{op_vals}" keyTimes="{kt_str}" dur="17.5s" begin="3.2s" repeatCount="indefinite"/><path d="{path_d}"/></g>')
     svg_lines.append(f'      </g>')
 
     # 3. TRAVELLER LAYER (900 dots)
     svg_lines.append(f'      <g id="traveller-layer" fill="{portrait_hue}">')
-    tr_op_vals = "0;0;1;1;1;1;1;1;1;0;0"
+    tr_op_vals = "0;0;1;1;1;1;1;1;1;1;0"
     for i in range(900):
         x1, y1 = pts_py[i]
         x2, y2 = pts_dart[i]
