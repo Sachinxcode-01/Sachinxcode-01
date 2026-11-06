@@ -12,8 +12,15 @@
 <!-- ===== 2. TYPEWRITER & CREDENTIALS ===== -->
 <div align="center">
   <a href="https://github.com/Sachinxcode-01">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=40&lines=Google+Student+Ambassador+%F0%9F%8E%93;Google+Cloud+Arcade+Facilitator+%E2%98%81%EF%B8%8F;Full-Stack+%26+AI+Systems+Engineer+%E2%9A%A1;Building+Real-Time+Voice+AI+%26+Biometrics+%F0%9F%A4%96" alt="Typing Animation" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&multiline=false&width=650&height=40&lines=Consistency+beats+talent+%F0%9F%92%AF;Google+Student+Ambassador+%F0%9F%8E%93;Google+Cloud+Arcade+Facilitator+%E2%98%81%EF%B8%8F;Full-Stack+%26+AI+Systems+Engineer+%E2%9A%A1;Building+Real-Time+Voice+AI+%26+Biometrics+%F0%9F%A4%96" alt="Typing Animation" />
   </a>
+</div>
+
+<div align="center">
+
+> ### ⚡ *&ldquo;Consistency beats talent 💯&rdquo;* 🎯
+> <sub>🔥 <b>Relentless Execution</b> &nbsp;•&nbsp; 💎 <b>Compounding Craft</b> &nbsp;•&nbsp; 🚀 <b>Zero Excuses</b></sub>
+
 </div>
 
 <div align="center">

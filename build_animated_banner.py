@@ -121,6 +121,19 @@ PYTHON_PATH_D = (
     ".08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"
 )
 
+DART_PATHS_D = [
+    # Left wing fold
+    'M29.64,108.94L6.36,85.66c-2.76-2.84-4.48-6.84-4.48-10.75c0-1.81,1.02-4.64,1.79-6.27l21.49-44.77L29.64,108.94z',
+    # Top flap fold
+    'M109.34,28.35L86.06,5.07c-2.03-2.04-6.27-4.48-9.85-4.48c-3.08,0-6.1,0.62-8.06,1.79L25.17,23.87L109.34,28.35z',
+    # Bottom tail
+    'M57.4 136.7 L113.82 136.7 L113.82 112.52 L71.73 99.09 L33.23 112.52 Z',
+    # Front center-left body fold
+    'M25.17,96.41c0,7.18,0.9,8.95,4.48,12.54l3.58,3.58h80.59l-39.4-44.77L25.17,23.88V96.41z',
+    # Back center-right body fold
+    'M96.8,23.87H25.16l88.65,88.65h24.18V57l-28.65-28.65C105.32,24.31,101.74,23.87,96.8,23.87z'
+]
+
 def parse_svg_path(d):
     tokens = re.findall(r'([A-Za-z]|[-+]?(?:\d*\.\d+|\d+)(?:[eE][-+]?\d+)?)', d)
     vertices = []
@@ -296,32 +309,33 @@ def generate_python_points(size=(300, 340), n_pts=900):
     return sample_mask_points(py_mask, n_pts=n_pts, edge_ratio=0.38, seed=42)
 
 def generate_dart_points(size=(300, 340), n_pts=900):
-    dart_img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logos", "dart.png")
-    if os.path.exists(dart_img_path):
-        im = Image.open(dart_img_path).convert('L')
-        dart_mask = np.array(im) > 128
-    else:
-        im = Image.new('L', size, 0)
-        draw = ImageDraw.Draw(im)
-        cx, cy = size[0] // 2, size[1] // 2
-        scale = 1.72
-        ox = cx - int(66 * scale)
-        oy = cy - int(68 * scale)
-        def pt(x, y):
-            return (int(round(ox + x * scale)), int(round(oy + y * scale)))
-        poly1 = [pt(62.6, 15.6), pt(20.2, 58.0), pt(37.2, 75.0), pt(93.8, 18.4), pt(68.8, 15.6)]
-        poly2 = [pt(62.6, 15.6), pt(37.2, 75.0), pt(54.6, 92.4), pt(93.8, 53.2), pt(93.8, 26.8)]
-        poly3 = [pt(93.8, 53.2), pt(54.6, 92.4), pt(71.6, 109.4), pt(111.2, 69.8), pt(111.2, 53.2)]
-        poly4 = [pt(71.6, 109.4), pt(87.2, 125.0), pt(119.4, 92.8), pt(119.4, 76.2)]
-        draw.polygon(poly1, fill=255)
-        draw.polygon(poly2, fill=255)
-        draw.polygon(poly3, fill=255)
-        draw.polygon(poly4, fill=255)
-        draw.line([pt(62.6, 15.6), pt(37.2, 75.0)], fill=0, width=4)
-        draw.line([pt(93.8, 53.2), pt(54.6, 92.4)], fill=0, width=4)
-        draw.line([pt(71.6, 109.4), pt(111.2, 69.8)], fill=0, width=4)
-        dart_mask = np.array(im) > 128
-    return sample_mask_points(dart_mask, n_pts=n_pts, edge_ratio=0.40, seed=42)
+    fig, ax = plt.subplots(figsize=(size[0] / 100.0, size[1] / 100.0), dpi=100)
+    fig.patch.set_facecolor('black')
+    ax.set_facecolor('black')
+
+    scale = 188.0 / 136.11
+    cx, cy = size[0] / 2.0, size[1] / 2.0
+    ox, oy = 69.935, 68.645
+
+    for d in DART_PATHS_D:
+        p = parse_svg_path(d)
+        verts = p.vertices.copy()
+        verts[:, 0] = (verts[:, 0] - ox) * scale + cx
+        verts[:, 1] = (verts[:, 1] - oy) * scale + cy
+        trans_path = mpath.Path(verts, p.codes)
+        patch = mpatches.PathPatch(trans_path, facecolor='white', edgecolor='black', lw=3.2)
+        ax.add_patch(patch)
+
+    ax.set_xlim(0, size[0])
+    ax.set_ylim(size[1], 0)
+    ax.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig.canvas.draw()
+    rgba = np.asarray(fig.canvas.buffer_rgba())
+    plt.close(fig)
+
+    dart_mask = rgba[:, :, 0] > 128
+    return sample_mask_points(dart_mask, n_pts=n_pts, edge_ratio=0.38, seed=42)
 
 def generate_typescript_points(size=(300, 340), n_pts=900):
     im = Image.new('L', size, 0)
