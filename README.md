@@ -32,6 +32,10 @@
     <img src="https://img.shields.io/badge/Google-Student_Ambassador-0A101F?style=for-the-badge&logo=google&logoColor=EA4335&labelColor=0A101F" alt="Google Student Ambassador" />
   </a>
   &nbsp;
+  <a href="#telemetry">
+    <img src="https://img.shields.io/badge/Daily_Streak-110+_Days_🔥-0A101F?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A101F" alt="110+ Days Daily Streak" />
+  </a>
+  &nbsp;
   <a href="mailto:kalinganavarsachin@gmail.com">
     <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-0A101F?style=for-the-badge&logo=handshake&logoColor=10B981&labelColor=0A101F" alt="Status: Open to Opportunities" />
   </a>
@@ -448,9 +452,10 @@ Building scalable, production-grade applications with real-time AI and fluid int
 
 ```bash
 $ git telemetry --analytics --rhythm
-• Daily Commitment Rhythm   :: Active daily code shipments, continuous refactoring & feature releases
+• Active Daily Streak        :: 110+ Days Unbroken Shipping (Jul 25, 2026 – Present)
+• Annual Contribution Count  :: 1,499+ Verified GitHub Contributions (1.5k+ All-Time)
 • Automated Deployment Pulse :: CI/CD pipelines validating test suites & live deployments on Vercel
-• Code Quality Standard     :: Modular architecture, type safety, sub-200ms latency targets & 0-warning builds
+• Code Quality Standard      :: Modular architecture, type safety, sub-200ms latency targets & 0-warning builds
 ```
 
 <div align="center">
@@ -461,8 +466,8 @@ $ git telemetry --analytics --rhythm
 
 <!-- Row 1: Streak Stats (Full Width) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=Sachinxcode-01&hide_border=true&background=FFFFFF&stroke=0891B2&ring=7C3AED&fire=059669&currStreakLabel=0891B2&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0891B2&card_width=1180" alt="Sachin's GitHub Streak Telemetry" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Sachinxcode-01&timezone=Asia/Kolkata&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=Sachinxcode-01&timezone=Asia/Kolkata&hide_border=true&background=FFFFFF&stroke=0891B2&ring=7C3AED&fire=059669&currStreakLabel=0891B2&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0891B2&card_width=1180" alt="Sachin's GitHub Streak Telemetry" />
 </picture>
 
 <br/>
